@@ -35,6 +35,7 @@
 
         <h1>Hallo verden!</h1>
         <p>Hei og hallo, dette er min lille nettside :)</p>
+        <img src="images/preloader-code.png" alt="code">
 
     </main>
 

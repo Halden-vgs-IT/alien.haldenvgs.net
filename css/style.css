@@ -66,6 +66,9 @@ html, body {
 main {
     height: 100vh;
 }
+main img {
+    width: 10%;
+}
 h1 {
     margin: 0;
     font-size: var(--heading);
