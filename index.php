@@ -31,9 +31,10 @@
 </head>
 <body>
 
-    <main class="flexbox">
+    <main class="flexbox-col">
 
         <h1>Hallo verden!</h1>
+        <p>Hei og hallo, dette er min lille nettside :)</p>
 
     </main>
 
