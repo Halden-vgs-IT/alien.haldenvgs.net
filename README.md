@@ -1,5 +1,6 @@
 # alien.haldenvgs.net
-Arild Edvin, personal website for alien under haldenvgs.net
+Laget av Arild Edvin
+Dette er min personlige nettside under haldenvgs.net
 
 Åpne nettsiden [her][nettside]
 
