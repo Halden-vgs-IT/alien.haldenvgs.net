@@ -110,39 +110,7 @@
 <!-- #Main -->
 <main class="flexbox-col">
 
-    <!-- Record Player -->
-    <div class="record-wrapper flexbox">
-
-        <!-- Player -->
-        <div class="record flexbox">
-            <div class="record-image-wrapper flexbox">
-                <div class="record-inner"></div>
-                <div class="record-overlay"></div>
-                <img class="record-image" src="https://upload.wikimedia.org/wikipedia/en/a/ae/AJR_The_Click.jpg" alt="">
-            </div>
-            <div class="record-progress flexbox">
-                <div class="record-knob flexbox">
-                    <div class="record-knob-inner"></div>
-                </div>
-                <div class="record-bar"></div>
-            </div>
-            <div class="ring ring-1"></div>
-            <div class="ring ring-2"></div>
-            <div class="ring ring-3"></div>
-            <div class="ring ring-4"></div>
-            <div class="ring ring-5"></div>
-        </div>
-
-        <!-- Info -->
-        <div class="record-info flexbox-col-left">
-            <p class="record-small-title">Currently playing</p>
-            <h3 class="record-large-title">AJR - Bud Like You</h3>
-            <div class="record-time">
-                <p><span>00:13</span> / <span>03:51</span></p>
-            </div>
-        </div>
-
-    </div>
+    
 
 </main>
 </body>
