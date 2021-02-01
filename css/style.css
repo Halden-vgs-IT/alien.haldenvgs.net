@@ -358,6 +358,7 @@ h1 {
     top: -14.25em;
     left: -20em;
     width: 40em;
+    display: none;
     position: fixed;
     will-change: transform;
     pointer-events: none;
