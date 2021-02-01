@@ -504,13 +504,23 @@ h1 {
     }
     /* Menu Image */
     .menu-image-wrapper {
-        display: none;
+        top: -8.5em;
+        left: -12.5em;
+        width: 25em;
+        position: fixed;
+        will-change: transform;
+        pointer-events: none;
+        z-index: 54;
     }
 }
 @media only screen and (max-width: 576px) {
     /* Menu */
     .menu-item-inner {
         font-size: calc(var(--heading-large) - 5rem);
+    }
+    /* Menu Image */
+    .menu-image-wrapper {
+        display: none;
     }
 }
 @media only screen and (max-width: 496px) {
