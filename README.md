@@ -25,12 +25,12 @@ Dette er min personlige nettside under haldenvgs.net
 
 - [x] Lage meny til alle sider
 - [ ] Designe prosjekt siden
-- [ ] Finne bilder til hver side header
+- [ ] Finne bilder til header på hver side
 
 <br/><br/>
 
 <details>
-<summary>:star: Here's a couple random memes</summary>
+<summary>:star: Her er noen kule memes</summary>
   
 <!-- start -->
 [<img align="left" alt="code-meme" width="40%" src="https://i.imgur.com/TVaVumb.jpg" />][nettside]
