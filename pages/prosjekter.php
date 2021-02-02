@@ -3,19 +3,32 @@
 <head>
     <!-- Meta Tags -->
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Alien">
+    <meta name="language" content="no">
+    <meta name="designer" content="Areal Alien">
+    <meta name="description" content="Nettsiden til alien er en side under haldenvgs.net, og den kuleste HUB-en på hele domenet">
+    <meta name="keywords" content="school, HTML, CSS, Javascript, ">
+    <meta name="author" content="Areal Alien">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ======= -->
     <!-- General -->
     <title>Alien - Prosjekter</title>
-    <link rel="icon" href="../images/favicon.png">
+    <link rel="icon" href="../images/icons/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
     <!-- ===== -->
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- ======= -->
     <!-- Scripts -->
+    <script src="../javascript/pace.js" defer></script>
+    <script src="../javascript/script.js" defer></script>
+    <script src="../javascript/cursor.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
@@ -120,7 +133,4 @@
         elements: true
     };
 </script>
-<script src="../javascript/pace.js"></script>
-<script src="../javascript/script.js"></script>
-<script src="../javascript/cursor.js"></script>
 </html>
