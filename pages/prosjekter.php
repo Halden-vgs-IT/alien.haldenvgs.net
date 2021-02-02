@@ -24,6 +24,7 @@
     <!-- Stylesheets -->
     <link type="text/css" rel="stylesheet" href="../css/style.css">
     <link type="text/css" rel="stylesheet" href="../css/cursor.css">
+    <link rel="stylesheet" href="../css/pace-theme-minimal.tmpl.css">
     <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/solid.css">
@@ -114,6 +115,12 @@
 
 </main>
 </body>
+<script>
+    paceOptions = {
+        elements: true
+    };
+</script>
+<script src="../javascript/pace.js"></script>
 <script src="../javascript/script.js"></script>
 <script src="../javascript/cursor.js"></script>
 </html>
