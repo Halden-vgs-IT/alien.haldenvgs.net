@@ -292,7 +292,7 @@ h1 {
 }
 .header-image-blur {
     top: 2em;
-    min-width: 90%;
+    min-width: 85%;
     height: 100%;
     position: absolute;
     transform: scale(.9, .9);
@@ -470,9 +470,6 @@ h1 {
         width: calc(85% - 5em);
     }
     /* Header */
-    .header-wrapper {
-        width: calc(85% - 5em);
-    }
     .header-title {
         font-size: calc(var(--heading-large) - 3.75rem);
     }
@@ -508,9 +505,6 @@ h1 {
         width: calc(100% - 5em);
     }
     /* Header */
-    .header-wrapper {
-        width: calc(100% - 5em);
-    }
     .header-title {
         font-size: calc(var(--heading-large) - 4rem);
     }

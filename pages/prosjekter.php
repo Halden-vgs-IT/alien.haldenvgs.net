@@ -120,8 +120,8 @@
 
     <!-- Header Inner -->
     <div class="header-wrapper flexbox">
-        <h1 class="header-title">Prosj</h1>
-        <h1 class="header-title">ekter</h1>
+        <h1 class="header-title">Pojke</h1>
+        <h1 class="header-title">rsetr</h1>
         <div class="header-overlay"></div>
         <img class="header-image rellax" data-rellax-speed="-7" src="../images/menu-1.gif" alt="">
     </div>
