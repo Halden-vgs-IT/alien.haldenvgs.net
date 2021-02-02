@@ -33,8 +33,8 @@ Dette er min personlige nettside under haldenvgs.net
 <summary>:star: Here's a couple random memes</summary>
   
 <!-- start -->
-[<img align="left" alt="code-meme" width="40%" src="https://i.imgur.com/TVaVumb.jpg" />][website]
-[<img align="left" alt="code-meme-2" width="40%" src="https://i.imgur.com/MSnKxzc.jpg" />][website]
+[<img align="left" alt="code-meme" width="40%" src="https://i.imgur.com/TVaVumb.jpg" />]
+[<img align="left" alt="code-meme-2" width="40%" src="https://i.imgur.com/MSnKxzc.jpg" />]
 <!-- end -->
 
 </details>
