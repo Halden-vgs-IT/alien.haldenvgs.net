@@ -473,6 +473,9 @@ h1 {
     .header-wrapper {
         width: calc(85% - 5em);
     }
+    .header-title {
+        font-size: calc(var(--heading-large) - 3.75rem);
+    }
     /* Menu */
     .menu {
         width: calc(85% - 5em);
@@ -508,6 +511,9 @@ h1 {
     .header-wrapper {
         width: calc(100% - 5em);
     }
+    .header-title {
+        font-size: calc(var(--heading-large) - 4rem);
+    }
     /* Menu */
     .menu {
         width: calc(100% - 5em);
@@ -534,6 +540,10 @@ h1 {
     /* Menu Image */
     .menu-image-wrapper {
         display: none;
+    }
+    /* Header */
+    .header-title {
+        font-size: calc(var(--heading-large) - 4.5rem);
     }
 }
 @media only screen and (max-width: 496px) {
