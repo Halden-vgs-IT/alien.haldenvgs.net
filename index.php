@@ -25,12 +25,16 @@
     <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
     <!-- ===== -->
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- ======= -->
     <!-- Scripts -->
     <script src="javascript/pace.js" defer></script>
     <script src="javascript/script.js" defer></script>
     <script src="javascript/cursor.js" defer></script>
+    <script src="javascript/rellax.min.js"></script>
+    <script src="javascript/rellax.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
@@ -54,11 +58,12 @@
 
 <!-- Menu Images -->
 <div id="m-img-1" class="menu-image-wrapper">
-    <img class="menu-image" src="images/menu-1.gif" alt="">
-    <img class="menu-image-back" src="images/menu-1.gif" alt="">
+    <img class="menu-image" src="images/header.gif" alt="">
+    <img class="menu-image-back" src="images/header.gif" alt="">
 </div>
 <div id="m-img-2" class="menu-image-wrapper">
-    <img class="menu-image" src="images/menu-2.gif" alt="">
+    <img class="menu-image" src="images/menu-1.gif" alt="">
+    <img class="menu-image-back" src="images/menu-1.gif" alt="">
 </div>
 <div id="m-img-3" class="menu-image-wrapper">
     <img class="menu-image" src="images/menu-3.jpg" alt="">
@@ -72,7 +77,7 @@
 <!-- #Navbar -->
 <nav id="navbar" class="flexbox">
     <div class="navbar-inner">
-        <div class="navbar-left flexbox">
+        <div class="navbar-left flexbox-left">
             <div id="nav-button" cursor-class="arrow">
                 <span></span>
                 <span></span>
@@ -80,8 +85,12 @@
                 <span></span>
             </div>
         </div>
-        <div class="navbar-center"></div>
-        <div class="navbar-right"></div>
+        <div class="navbar-center flexbox">
+            <a cursor-class="arrow"><?php include "structure/logo.php" ?></a>
+        </div>
+        <div class="navbar-right flexbox-right">
+            <p>NO</p>
+        </div>
     </div>
 </nav>
 
@@ -115,11 +124,11 @@
     <div class="header-wrapper flexbox">
         <h1 class="header-title">Alien ♡</h1>
         <div class="header-overlay"></div>
-        <img class="header-image" src="images/menu-1.gif" alt="">
+        <img class="header-image rellax" data-rellax-speed="-7" src="images/header.gif" alt="">
     </div>
 
     <!-- Header Blur -->
-    <img class="header-image-blur" src="images/menu-1.gif" alt="">
+    <img class="header-image-blur rellax" data-rellax-speed="-7" src="images/header.gif" alt="">
 
 </header>
 
@@ -134,5 +143,9 @@
     paceOptions = {
         elements: true
     };
+
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+
 </script>
 </html>
