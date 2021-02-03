@@ -9,7 +9,7 @@ ___
 
 <br/>
 
-## Generell info
+## Info
 
 Laget av Arild Edvin. <br/>
 Dette er min personlige nettside under haldenvgs.net
