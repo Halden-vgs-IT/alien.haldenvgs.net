@@ -3,7 +3,8 @@
 
 <br/>
 
-![header](https://alien.haldenvgs.net/images/menu-1.gif)
+[<img align="left" alt="code-meme" width="100%" src="https://alien.haldenvgs.net/images/header.gif" />][nettside]
+
 
 ## Generell info
 
