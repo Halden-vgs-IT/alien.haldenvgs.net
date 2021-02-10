@@ -69,7 +69,6 @@ main {
 }
 footer {
     min-height: 20vh;
-    background-color: var(--bc-dark);
 }
 h1 {
     margin: 0;
@@ -185,6 +184,9 @@ h1 {
     transition: color .15s ease-in-out;
     cursor: pointer;
 }
+.navbar-right .last {
+    margin: 0 0 0 1.25em;
+}
 .navbar-right a:hover {
     color: var(--primary);
 }
@@ -275,7 +277,7 @@ h1 {
     background-color: transparent;
     border: .2em solid var(--white);
     border-radius: 50%;
-    opacity: .2;
+    opacity: .15;
 }
 .ring2 {
     width: 30em;
@@ -284,7 +286,7 @@ h1 {
     background-color: transparent;
     border: .2em solid var(--white);
     border-radius: 50%;
-    opacity: .2;
+    opacity: .15;
 }
 .ring3 {
     width: 45em;
@@ -293,7 +295,7 @@ h1 {
     background-color: transparent;
     border: .2em solid var(--white);
     border-radius: 50%;
-    opacity: .2;
+    opacity: .15;
 }
 .play-button-wrapper {
     position: absolute;
@@ -371,6 +373,34 @@ h1 {
     position: absolute;
     object-fit: cover;
 }
+/* Footer */
+#footer {
+    width: 100%;
+}
+.footer-inner {
+    width: 75%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.footer-left {
+    width: 100%;
+}
+.footer-left h3 {
+    font-size: calc(var(--paragraph) + .2rem);
+    transition: color .15s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+}
+.footer-left h3:hover {
+    color: var(--primary);
+}
+.footer-left p {
+    color: var(--gray-dark);
+    font-size: var(--paragraph);
+}
+.footer-right {
+    width: 100%;
+}
 /* Selection */
 ::selection {
     color: var(--white);
@@ -378,11 +408,11 @@ h1 {
 }
 /* Scrollbar */
 ::-webkit-scrollbar-track {
-    background-color: var(--bc-dark);
+    background-color: var(--bc);
 }
 ::-webkit-scrollbar {
     width: 8px;
-    background-color: var(--bc-dark);
+    background-color: var(--bc);
 }
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary);
@@ -439,6 +469,9 @@ h1 {
         width: 220%;
         position: absolute;
         z-index: 5;
+    }
+    .header-desc-title {
+        letter-spacing: .2em;
     }
     /* Header Center */
     .header-rings {
@@ -499,6 +532,9 @@ h1 {
     }
     .header-description-wrapper {
         width: 80%;
+    }
+    .header-desc-title {
+        letter-spacing: .1em;
     }
     .header-description {
         font-size: calc(var(--paragraph) - .2rem);

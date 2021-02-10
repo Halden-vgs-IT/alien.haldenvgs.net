@@ -70,7 +70,7 @@
             <div class="navbar-right flexbox-space">
                 <a><i class="uil uil-share-alt"></i></a>
                 <a><i class="uil uil-instagram"></i></a>
-                <a><i class="uil uil-search"></i></a>
+                <a class="last"><i class="uil uil-search"></i></a>
             </div>
         </div>
     </nav>
@@ -146,14 +146,13 @@
                     </svg>
                 </div>
                 <div class="header-desc-right flexbox-col-left">
-                    <p class="header-desc-title">Buy tickets, 1 day</p>
+                    <p class="header-desc-title">Heiskort, 1 dag</p>
                 </div>
                 <div class="header-desc-bottom">
                     <p class="header-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.</p>
+                        Du kan nå kjøpe heiskort på våre nettsider til en helt rå pris!
+                        For kun kr. 200,- kan du kose deg i bakken en hel dag.
+                        For barn koster det kun kr. 100,- pr. dag.</p>
                 </div>
             </div>
 
@@ -188,8 +187,22 @@
 </main>
 
 <!-- #footer -->
-<footer id="footer" class="flexbox-col">
-    <p>Made with ♡ by Areal Alien</p>
+<footer id="footer" class="flexbox">
+
+    <!-- Footer Inner -->
+    <div class="footer-inner">
+
+        <!-- Footer Left -->
+        <div class="footer-left flexbox-col-left">
+            <h3>snowstyle.</h3>
+            <p>Made with ♡ by Areal Alien</p>
+        </div>
+
+        <!-- Footer Right -->
+        <div class="footer-right"></div>
+
+    </div>
+
 </footer>
 
 </body>
