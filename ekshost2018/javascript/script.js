@@ -1,30 +1,173 @@
-// navbar button
-let navBtn = $('#nav-button');
-let menu = $('.menu-wrapper');
-let menuImage = $('.menu-image-wrapper');
+// Pages
+const pageHome = document.querySelector("#page-home");
+const pageHeiskort = document.querySelector("#page-heiskort");
+const pageHytter = document.querySelector("#page-hytter");
+const pagePurchase = document.querySelector("#page-purchase");
 
-navBtn.click(function() {
-    if(navBtn.hasClass('open')) {
-        navBtn.toggleClass('open');
-        navBtn.css("transform", "rotate(0deg)");
-        menu.css("opacity", "0");
-        menu.css("pointer-events", "none");
-        menu.css("z-index", "50");
-        menuImage.css("display", "none");
-        $('body').css("overflow", "auto");
-        setTimeout(function() {
-            menu.css("pointer-events", "none");
-            menu.css("z-index", "50");
-        }, 275);
-    } else {
-        navBtn.toggleClass('open');
-        navBtn.css("transform", "rotate(180deg)");
-        menu.css("opacity", "1");
-        menuImage.css("display", "inline-block");
-        $('body').css("overflow", "hidden");
-        setTimeout(function() {
-            menu.css("pointer-events", "auto");
-            menu.css("z-index", "auto");
-        }, 275);
-    }
+// Links
+// =====
+// * These links takes you to the different pages on the website.
+// * The click functions are for buttons to "redirect" or rather set the styling for the different pages.
+// * "scrollTo" makes sure you always stay in the top of the page when you go to a new page,
+//   just like you would when redirecting to an actual page.
+// * Every click function changes style of every page in case the button is used on a different page.
+let homeLink = document.getElementsByClassName("home-link");
+let heiskortLink = document.getElementsByClassName("heiskort-link");
+let hytterLink = document.getElementsByClassName("hytter-link");
+let purchaseLink = document.getElementsByClassName("purchase-link");
+
+// Home Link 1
+homeLink[0].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    pageHome.style.display = "block";
+    pageHeiskort.style.display = "none";
+    pageHytter.style.display = "none";
+
+});
+// Home Link 1
+homeLink[1].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    pageHome.style.display = "block";
+    pageHeiskort.style.display = "none";
+    pageHytter.style.display = "none";
+
+});
+// Heiskort Link 1
+heiskortLink[0].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    pageHome.style.display = "none";
+    pageHeiskort.style.display = "block";
+    pageHytter.style.display = "none";
+
+});
+// Heiskort Link 2
+heiskortLink[1].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    pageHome.style.display = "none";
+    pageHeiskort.style.display = "block";
+    pageHytter.style.display = "none";
+
+});
+// Hytter Link 1
+hytterLink[0].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    pageHome.style.display = "none";
+    pageHeiskort.style.display = "none";
+    pageHytter.style.display = "block";
+
+});
+// Purchase Link 1
+purchaseLink[0].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    pageHome.style.display = "none";
+    pageHeiskort.style.display = "none";
+    pageHytter.style.display = "none";
+    pagePurchase.style.display = "block";
+
+});
+
+
+// Cards
+// =====
+// These cards send you to the different pages on the website.
+// Variables are declared at the top, and the hover functions are underneath.
+// For the transitions on the hover: They are declared in "style.css".
+const card1 = document.querySelector("#card-heiskort");
+const card2 = document.querySelector("#card-hytter");
+
+// Card Images
+const cardImage1 = document.querySelector("#card-image-heiskort");
+const cardImage2 = document.querySelector("#card-image-hytter");
+
+// Card Glow
+let glow = document.getElementsByClassName("card-glow");
+
+// Mouse hover over for card 1
+// And
+// Mouse hover leaving for card 1
+card1.addEventListener("mouseenter", function(event) {
+
+    event.preventDefault();
+
+    cardImage1.style.transform = "scale(1.15, 1.15)";
+    glow[0].style.transform = "scale(1, 1)";
+});
+card1.addEventListener("mouseleave", function(event) {
+
+    event.preventDefault();
+
+    cardImage1.style.transform = "scale(1, 1)";
+    glow[0].style.transform = "scale(.95, .95)";
+});
+
+// Mouse hover over for card 2
+// And
+// Mouse hover leaving for card 2
+card2.addEventListener("mouseenter", function(event) {
+
+    event.preventDefault();
+
+    cardImage2.style.transform = "scale(1.15, 1.15)";
+    glow[1].style.transform = "scale(1, 1)";
+});
+card2.addEventListener("mouseleave", function(event) {
+
+    event.preventDefault();
+
+    cardImage2.style.transform = "scale(1, 1)";
+    glow[1].style.transform = "scale(.95, .95)";
 });
