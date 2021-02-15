@@ -118,6 +118,21 @@ purchaseLink[0].addEventListener('click', function(event) {
     pageHytter.style.display = "none";
     pagePurchase.style.display = "block";
 
+    // Output payment details
+    let daysFinalText = document.getElementById("days-final-text");
+    let payPriceText = document.getElementById("price-pay-text");
+
+    daysFinalText.innerHTML = days.innerHTML;
+    payPriceText.innerHTML = price.innerHTML;
+
+    setTimeout(function() {
+
+        pageHome.style.display = "block";
+        pageHeiskort.style.display = "none";
+        pageHytter.style.display = "none";
+        pagePurchase.style.display = "none";
+    }, 4000);
+
 });
 
 

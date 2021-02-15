@@ -438,6 +438,19 @@ h1 {
     transition: all .3s cubic-bezier(.175,.685,.32,1.275);
     opacity: .75;
 }
+/*
+=-=-=-=-=-=-=-=-=-=-=-=-=
+*       Heiskort        *
+=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+#page-heiskort {
+    display: none;
+}
+/* Main */
+#main-heiskort {
+    width: 100%;
+    height: 100vh;
+}
 /* Page Headers */
 .page-inner {
     width: 100%;
@@ -492,124 +505,6 @@ h1 {
     transform: scale(1.1, 1.1) rotate(-2deg);
     transition: all .3s cubic-bezier(.175,.685,.32,1.275);
     opacity: .75;
-}
-/* Page Content */
-.page-content {
-    height: 100%;
-    padding: 5em 0;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-.page-top {
-    margin: 0 0 3em 0;
-}
-.page-title p {
-    margin: 0;
-    color: var(--gray);
-    text-transform: uppercase;
-    line-height: 0;
-}
-.page-title h1 {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: calc(var(--heading) + 1rem);
-    letter-spacing: .1em;
-    font-weight: 900;
-}
-.page-button-wrapper {
-    margin: 0 1em 2em 0;
-}
-.page-button-wrapper button {
-    padding: 1em 2.6em;
-    border-radius: 0;
-    border: 1px solid var(--bc-gray);
-    background-color: rgba(255, 255, 255, .2);
-    font-size: var(--paragraph);
-    font-weight: 200;
-    cursor: pointer;
-}
-/* Slider */
-.container {
-    padding: 1.5em 2em 2em 2em;
-    margin: 0 0 4em 0;
-    border: 1px solid var(--bc-gray);
-    background-color: rgba(255, 255, 255, .2);
-    box-shadow: 0 12px 25px 0 rgba(62, 63, 67, .05);
-    position: relative;
-}
-.container .upper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1em;
-    color: var(--gray);
-    font-weight: 500;
-}
-.container .upper .left {
-    text-transform: uppercase;
-    letter-spacing: .1em;
-}
-.container .upper .right {
-    align-items: center;
-    display: flex;
-}
-.container .upper .right .price {
-    color: #3e3f43;
-    font-size: calc(var(--heading) - .5rem);
-    margin: 0 .1em 0 0;
-    font-weight: 900;
-}
-.discount {
-    background-color: #feece7;
-    color: #ff8c66;
-    font-size: 0.85em;
-    padding: .3em .8em .2em .8em;
-    border-radius: 15px;
-    margin-left: 6px;
-}
-.slider {
-    width: 550px;
-}
-.slider input {
-    background: linear-gradient(to right, var(--primary) 0%, #eaeefb 0%, #eaeefb 50%, #eaeefb 100%);
-    border-radius: 8px;
-    height: 8px;
-    width: 100%;
-    outline: none;
-    transition: all 450ms ease-in;
-    -webkit-appearance: none;
-}
-.slider input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: var(--primary);
-    box-shadow: 0 5px 20px 0 rgba(65, 160, 255, 0.7);
-    cursor: grab;
-    position: relative;
-    transition: all 0.2s;
-}
-.slider input::-webkit-slider-thumb:hover {
-}
-.slider input::-webkit-slider-thumb:active {
-    cursor: grabbing;
-}
-
-/*
-=-=-=-=-=-=-=-=-=-=-=-=-=
-*       Heiskort        *
-=-=-=-=-=-=-=-=-=-=-=-=-=
-*/
-#page-heiskort {
-    display: none;
-}
-/* Main */
-#main-heiskort {
-    width: 100%;
-    height: 100vh;
 }
 .back-to-home {
     color: var(--primary);
@@ -722,6 +617,111 @@ h1 {
     background-position: 100% 50%;
     filter: blur(1.6rem);
     bottom: -2px;
+}
+/* Page Content */
+.page-content {
+    height: 100%;
+    padding: 5em 0;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.page-top {
+    margin: 0 0 3em 0;
+}
+.page-title p {
+    margin: 0;
+    color: var(--gray);
+    text-transform: uppercase;
+    line-height: 0;
+}
+.page-title h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: calc(var(--heading) + 1rem);
+    letter-spacing: .1em;
+    font-weight: 900;
+}
+.page-button-wrapper {
+    margin: 0 1em 2em 0;
+}
+.page-button-wrapper button {
+    padding: 1em 2.6em;
+    border-radius: 0;
+    border: 1px solid var(--bc-gray);
+    background-color: rgba(255, 255, 255, .2);
+    font-size: var(--paragraph);
+    font-weight: 200;
+    cursor: pointer;
+}
+/* Slider */
+.container {
+    padding: 1.5em 2em 2em 2em;
+    margin: 0 0 4em 0;
+    border: 1px solid var(--bc-gray);
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0 12px 25px 0 rgba(62, 63, 67, .05);
+    position: relative;
+}
+.container .upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    color: var(--gray);
+    font-weight: 500;
+}
+.container .upper .left {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+.container .upper .right {
+    align-items: center;
+    display: flex;
+}
+.container .upper .right .price {
+    color: #3e3f43;
+    font-size: calc(var(--heading) - .5rem);
+    margin: 0 .1em 0 0;
+    font-weight: 900;
+}
+.discount {
+    display: none;
+    background-color: #feece7;
+    color: #ff8c66;
+    font-size: 0.85em;
+    padding: .3em .8em .2em .8em;
+    border-radius: 15px;
+    margin-left: 6px;
+}
+.slider {
+    width: 550px;
+}
+.slider input {
+    background: linear-gradient(to right, var(--primary) 0%, #eaeefb 0%, #eaeefb 50%, #eaeefb 100%);
+    border-radius: 8px;
+    height: 8px;
+    width: 100%;
+    outline: none;
+    transition: all 450ms ease-in;
+    -webkit-appearance: none;
+}
+.slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    box-shadow: 0 5px 20px 0 rgba(65, 160, 255, 0.7);
+    cursor: grab;
+    position: relative;
+    transition: all 0.2s;
+}
+.slider input::-webkit-slider-thumb:hover {
+}
+.slider input::-webkit-slider-thumb:active {
+    cursor: grabbing;
 }
 /*
 =-=-=-=-=-=-=-=-=-=-=-=-=

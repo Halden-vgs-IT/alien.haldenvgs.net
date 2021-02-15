@@ -295,7 +295,7 @@
                         </div>
                         <div class="right">
                             <span class="price"><span id="price">200</span>kr</span>
-                            <span class="discount">25% <span class="hide">rabatt<span></span>
+                            <span class="discount">16.67% <span class="hide">rabatt<span></span>
                         </div>
                     </div>
                     <div class="slider">
@@ -320,11 +320,11 @@
                         <div class="buy-note-price">
                             <p>
                                 <span id="price-final">200</span>kr
-                                <span class="discount">25%</span>
+                                <span class="discount">16.67</span>
                             </p>
                         </div>
                         <div class="buy-note-button">
-                            <button type="button" class="button btn-primary"><i class="uil uil-shopping-bag"></i> Kjøp<div class="btn-secondary"></div></button>
+                            <button type="button" class="button btn-primary purchase-link"><i class="uil uil-shopping-bag"></i> Kjøp<div class="btn-secondary"></div></button>
                         </div>
                     </div>
                 </div>
@@ -363,9 +363,7 @@
         <div class="space"></div>
 
         <a class="home-link">Hjem</a>
-
-        <a class="purchase-link">Purchase</a>
-
+        
     </main>
 
 </div>
@@ -375,6 +373,15 @@
 
     <!-- #Main -->
     <main id="main-purchase" class="flexbox-col">
+
+        <p>Takk for bestillingen!</p>
+        <div class="flexbox-col-left">
+            <h3>Heiskort</h3>
+            <p>Voksen</p>
+            <p><span id="days-final-text"></span> dager</p>
+            <p><span id="price-pay-text"></span>kr</p>
+        </div>
+        <p>Du vil nå bli sendt tilbake til hjemmesiden...</p>
 
     </main>
 
