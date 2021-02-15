@@ -277,7 +277,7 @@
                     <h1>Heiskort</h1>
                 </div>
 
-                <p>Alder</p>
+                <p><span>Alder</span> <span class="page-undertitle">(Barn fra 0 - 12 år)</span></p>
                 <div class="page-buttons flexbox-left">
                     <div class="page-button-wrapper">
                         <button>Barn</button>
@@ -289,11 +289,13 @@
 
                 <p>Antall dager</p>
                 <div class="container">
-                    <div class="upper">
+                    <div class="upper flexbox-space">
                         <div class="left">
                             <span id="days"></span> dager
                         </div>
-                        <div class="right">
+                        <div class="right flexbox-right">
+                            <span id="disc1" class="price-disc">&nbsp1200kr&nbsp</span>
+                            <span id="disc2" class="price-disc">&nbsp1400kr&nbsp</span>
                             <span class="price"><span id="price">200</span>kr</span>
                             <span class="discount">16.67% <span class="hide">rabatt<span></span>
                         </div>
@@ -363,7 +365,7 @@
         <div class="space"></div>
 
         <a class="home-link">Hjem</a>
-        
+
     </main>
 
 </div>
@@ -374,14 +376,41 @@
     <!-- #Main -->
     <main id="main-purchase" class="flexbox-col">
 
-        <p>Takk for bestillingen!</p>
-        <div class="flexbox-col-left">
-            <h3>Heiskort</h3>
-            <p>Voksen</p>
-            <p><span id="days-final-text"></span> dager</p>
-            <p><span id="price-pay-text"></span>kr</p>
+        <!-- Purchase Box -->
+        <div class="purchase-box flexbox-col">
+
+            <!-- Purchase Box Inner -->
+            <div class="flexbox-col">
+
+                <!-- Purchase Box Left -->
+                <div class="purchase-left">
+
+                    <p class="check flexbox">
+                        <span class="circ flexbox"><i class="uil uil-check"></i></span>
+                        <span class="ring ring1"></span>
+                        <span class="ring ring2"></span>
+                        <span class="ring ring3"></span>
+                    </p>
+
+                </div>
+
+                <!-- Purchase Box Right -->
+                <div class="purchase-right flexbox-col">
+
+                    <p class="purchase-gray">Takk for bestillingen!</p>
+
+                    <div class="purchase-title flexbox-col-left">
+                        <h3>Heiskort</h3>
+                        <p>Voksen</p>
+                        <p><span id="days-final-text"></span> dager</p>
+                        <p><span id="price-pay-text"></span>kr</p>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <p>Du vil nå bli sendt tilbake til hjemmesiden...</p>
 
     </main>
 

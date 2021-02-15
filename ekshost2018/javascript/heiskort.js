@@ -8,6 +8,9 @@ let days = document.getElementById("days");
 let daysFinal = document.getElementById("days-final");
 let discount = document.getElementsByClassName("discount");
 
+let disc1 = document.getElementById("disc1");
+let disc2 = document.getElementById("disc2");
+
 let prices = [200, 400, 600, 800, 1000, 1000, 1000];
 
 days.innerHTML = "1";
@@ -36,6 +39,8 @@ let listener = function () {
                 daysFinal.innerHTML = "1";
                 discount[0].style.display = "none";
                 discount[1].style.display = "none";
+                disc1.style.display = "none";
+                disc2.style.display = "none";
                 break;
             case "2":
                 price.innerHTML = Number(prices[1]).toFixed(0);
@@ -44,6 +49,8 @@ let listener = function () {
                 daysFinal.innerHTML = "2";
                 discount[0].style.display = "none";
                 discount[1].style.display = "none";
+                disc1.style.display = "none";
+                disc2.style.display = "none";
                 break;
             case "3":
                 price.innerHTML = Number(prices[2]).toFixed(0);
@@ -52,6 +59,8 @@ let listener = function () {
                 daysFinal.innerHTML = "3";
                 discount[0].style.display = "none";
                 discount[1].style.display = "none";
+                disc1.style.display = "none";
+                disc2.style.display = "none";
                 break;
             case "4":
                 price.innerHTML = Number(prices[3]).toFixed(0);
@@ -60,6 +69,8 @@ let listener = function () {
                 daysFinal.innerHTML = "4";
                 discount[0].style.display = "none";
                 discount[1].style.display = "none";
+                disc1.style.display = "none";
+                disc2.style.display = "none";
                 break;
             case "5":
                 price.innerHTML = Number(prices[4]).toFixed(0);
@@ -68,6 +79,8 @@ let listener = function () {
                 daysFinal.innerHTML = "5";
                 discount[0].style.display = "none";
                 discount[1].style.display = "none";
+                disc1.style.display = "none";
+                disc2.style.display = "none";
                 break;
             case "6":
                 price.innerHTML = Number(prices[5]).toFixed(0);
@@ -78,6 +91,8 @@ let listener = function () {
                 discount[0].innerHTML = "16.67% rabatt";
                 discount[1].style.display = "inline-block";
                 discount[1].innerHTML = "16.67%";
+                disc1.style.display = "block";
+                disc2.style.display = "none";
                 break;
             case "7":
                 price.innerHTML = Number(prices[6]).toFixed(0);
@@ -88,6 +103,8 @@ let listener = function () {
                 discount[0].innerHTML = "28.57% rabatt";
                 discount[1].style.display = "inline-block";
                 discount[1].innerHTML = "28.57%";
+                disc1.style.display = "none";
+                disc2.style.display = "block";
         }
     });
 };

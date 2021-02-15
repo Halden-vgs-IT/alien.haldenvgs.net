@@ -126,12 +126,8 @@ purchaseLink[0].addEventListener('click', function(event) {
     payPriceText.innerHTML = price.innerHTML;
 
     setTimeout(function() {
-
-        pageHome.style.display = "block";
-        pageHeiskort.style.display = "none";
-        pageHytter.style.display = "none";
-        pagePurchase.style.display = "none";
-    }, 4000);
+        location.reload();
+    }, 2500);
 
 });
 
