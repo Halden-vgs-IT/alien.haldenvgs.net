@@ -392,7 +392,6 @@ h1 {
     width: 100%;
     height: 100%;
     position: relative;
-    border-radius: 2em;
     cursor: pointer;
 }
 .card h3 {
@@ -407,7 +406,6 @@ h1 {
     width: 100%;
     height: 100%;
     position: relative;
-    border-radius: 2em;
     overflow: hidden;
 }
 .card-image-wrapper::after {
@@ -456,7 +454,7 @@ h1 {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 45% 1fr;
     grid-gap: 5em;
     overflow: hidden;
 }
@@ -511,7 +509,7 @@ h1 {
     cursor: pointer;
 }
 .buy-note {
-    width: calc(100% - 5em);
+    width: 100%;
     margin: 0;
     padding: 1.5em 2em;
     position: relative;
@@ -618,7 +616,7 @@ h1 {
 /* Page Content */
 .page-content {
     height: 100%;
-    padding: 5em 0;
+    padding: 5em 5em 5em 0;
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -656,7 +654,7 @@ h1 {
 }
 /* Slider */
 .container {
-    width: calc(80% - 5em);
+    width: 85%;
     padding: 1.5em 2em 2em 2em;
     margin: 0 0 4em 0;
     border: 1px solid var(--bc-gray);
@@ -741,7 +739,131 @@ h1 {
 }
 /* Main */
 #main-hytter {
-
+    width: 100%;
+    height: 100vh;
+}
+.page-inner-2 {
+    width: 75%;
+    height: 100%;
+    overflow: hidden;
+}
+.page-2-navbar {
+    width: 100%;
+    padding: 2em 0;
+}
+.page-2-main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em;
+    overflow: hidden;
+}
+.page-2-content {
+    height: 100%;
+    padding: 5em 5em 5em 0;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.page-2-paragraph {
+    margin: 0 0 2em 0;
+}
+.page-2-paragraph p {
+    color: var(--gray);
+    font-size: var(--paragraph);
+}
+.page-2-paragraph p span {
+    margin: 0 1em 0 0;
+}
+.page-2-paragraph ul {
+    padding: 0;
+    list-style-type: none;
+}
+.page-2-paragraph ul li {
+    color: var(--gray);
+    font-size: var(--paragraph);
+}
+.page-left {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+.page-left-image-wrapper {
+    width: 100%;
+    height: 30em;
+    position: relative;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+.page-left-images {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+.page-left-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.page-left-image img {
+    min-width: 100%;
+    max-width: 120%;
+    min-height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 5;
+}
+.page-left-image-wrapper-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.page-left-image-wrapper-inner img {
+    min-width: 100%;
+    max-width: 120%;
+    min-height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 5;
+}
+.page-left-image-wrapper-inner .hidden {
+    display: none;
+}
+.page-left-glow {
+    top: 5em;
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    filter: blur(2.25rem);
+    transform: scale(.75, .75);
+    opacity: .8;
+}
+/* Stars */
+.stars {
+    margin: 0 0 1em 0;
+}
+.star {
+    margin: 0 .25em;
+}
+.stars .first {
+    margin: 0 .25em 0 0;
+}
+.filled svg {
+    width: 1em;
+}
+.empty svg {
+    width: 1.2em;
+}
+.stars p {
+    margin: 0 0 0 1em;
+    color: var(--gray-dark);
+    font-size: var(--paragraph);
 }
 /*
 =-=-=-=-=-=-=-=-=-=-=-=-=
@@ -787,7 +909,7 @@ h1 {
     line-height: 1em;
     z-index: 3;
 }
-.ring {
+.dash {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -796,13 +918,13 @@ h1 {
     opacity: .2;
     z-index: 2;
 }
-.ring1 {
+.dash1 {
     transform: scale(1.5, 1.5);
 }
-.ring2 {
+.dash2 {
     transform: scale(1.85, 1.85);
 }
-.ring3 {
+.dash3 {
     transform: scale(2.2, 2.2);
 }
 .purchase-gray {
