@@ -27,7 +27,7 @@ Dette er min personlige nettside under haldenvgs.net
 
 - [x] Lage meny til alle sider
 - [ ] Designe prosjekt siden
-- [ ] Finne bilder til header på hver side
+- [x] Finne bilder til header på hver side
 
 <br/><br/>
 
