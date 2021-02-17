@@ -7,6 +7,7 @@
 :root {
     /* Main Colors */
     --background: #eaebef;
+    --background-secondary: #dcdee3;
     --text-dark: #262629;
     --text-normal: #3e3f43;
     --text-light: #e9eaee;
@@ -54,15 +55,13 @@ header::after {
     height: 100%;
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, .65);
+    background-color: rgba(0, 0, 0, .75);
     z-index: 3;
 }
 header img {
-    min-width: 100%;
-    max-width: 140%;
-    min-height: 100%;
+    min-width: 140%;
+    min-height: 140%;
     position: absolute;
-    transform: scale(2, 2);
     filter: blur(5rem);
     object-fit: cover;
     z-index: 2;
@@ -187,6 +186,25 @@ button i {
     align-items: flex-end;
 }
 /* General */
+/* ScrollTop */
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 98;
+}
+.back-to-top a svg {
+    fill: var(--text-dark);
+}
+.back-to-top a {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+}
+.back-to-top a:hover {
+    transform: scale(1.1, 1.1);
+}
 /* Header */
 .header-inner {
     width: 75%;
@@ -224,6 +242,10 @@ button i {
     filter: none;
 }
 /* Main Page */
+.top-content {
+    width: 100%;
+    background-color: var(--background-secondary);
+}
 .content {
     width: 75%;
     margin: 5em 0;
@@ -232,10 +254,31 @@ button i {
     margin: 0 .5em 0 0;
     font-size: calc(var(--heading-small) - 2rem);
 }
+.content h4 {
+    margin: 0 0 .5em 0;
+}
+.content-list {
+    margin: 2em 0 0 0;
+    padding: 2em;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em;
+    border-radius: 1em;
+    background-color: var(--text-dark);
+    box-shadow: 0 40px 50px -30px rgba(38, 38, 41, .75);
+}
 .content-list p a {
     margin: .05em 0;
     text-decoration: none;
+    opacity: 1;
+    transition: opacity .05s ease-in-out;
     cursor: pointer;
+}
+.content-list p a:hover {
+    opacity: .4;
+}
+.link {
+    color: var(--blue-muted);
 }
 .variabler-list {
     color: var(--blue-muted);
@@ -244,6 +287,12 @@ button i {
     color: var(--orange);
 }
 .eventer-list {
+    color: var(--light-green);
+}
+.lokker-list {
+    color: var(--yellow);
+}
+.arrays-list {
     color: var(--pink);
 }
 .content-list p a:visited {
@@ -251,13 +300,16 @@ button i {
 }
 .content-list p a span {
     margin: 0 .75em 0 0;
-    color: var(--text-dark);
+    color: var(--text-light);
 }
 .content-list p .indent {
     margin: .05em 0 .05em 1.5em;
 }
+.content-list p .indent-last {
+    margin: .05em 0 1em 1.5em;
+}
 .content .title {
-    margin: 0 0 .75em 0;
+    margin: 0;
     position: relative;
     line-height: 1em;
 }
@@ -266,35 +318,8 @@ button i {
     line-height: 1em;
 }
 .content .undertitle-text {
-    margin: .5em 0 0 0;
+    margin: 2.5em 0 0 0;
     line-height: 1.2em;
-}
-.content .undertitle .wrap {
-    margin: 0 .4em;
-    padding: .45em .55em;
-    border-radius: .35em;
-    background-color: var(--text-dark);
-    color: var(--text-light);
-    line-height: 1.2em;
-}
-.content .undertitle-text .wrap {
-    margin: 0 .4em;
-    padding: .45em .55em;
-    border-radius: .35em;
-    background-color: var(--text-dark);
-    color: var(--text-light);
-}
-.wrap .italic {
-    font-style: italic;
-}
-.wrap .ident {
-    color: var(--yellow);
-}
-.wrap .brackets {
-    color: var(--blue);
-}
-.wrap .element {
-    color: var(--red);
 }
 .content .block {
     margin: 4em 0 0 0;
@@ -308,6 +333,14 @@ button i {
     border-left: 2px solid var(--orange);
 }
 .eventer {
+    padding: 0 0 0 4em;
+    border-left: 2px solid var(--light-green);
+}
+.lokker {
+    padding: 0 0 0 4em;
+    border-left: 2px solid var(--yellow);
+}
+.arrays {
     padding: 0 0 0 4em;
     border-left: 2px solid var(--pink);
 }
@@ -346,6 +379,9 @@ button i {
     color: var(--text-light);
     font-size: calc(var(--paragraph) + .25rem);
     white-space: nowrap;
+}
+.code-block .text-box-wrapper {
+    margin: 1.4em 0 0 0;
 }
 .code-block .small-space {
     margin: 0;
@@ -388,6 +424,9 @@ button i {
 }
 .code-block p .element {
     color: var(--red);
+}
+#paragraph {
+    display: none;
 }
 /* --------- */
 /* Selection */
@@ -457,6 +496,12 @@ button i {
     .eventer {
         padding: 0 0 0 3em;
     }
+    .lokker {
+        padding: 0 0 0 3em;
+    }
+    .arrays {
+        padding: 0 0 0 3em;
+    }
     /* Code Block */
     .blocks-grid {
         grid-template-columns: repeat(2, calc(50% - 2em));
@@ -496,6 +541,12 @@ button i {
         padding: 0 0 0 2em;
     }
     .eventer {
+        padding: 0 0 0 2em;
+    }
+    .lokker {
+        padding: 0 0 0 2em;
+    }
+    .arrays {
         padding: 0 0 0 2em;
     }
     /* Code Block */
