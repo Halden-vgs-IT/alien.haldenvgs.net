@@ -11,6 +11,7 @@
     --text-normal: #3e3f43;
     --text-light: #e9eaee;
     /* Other Colors */
+    --red: #ee6b71;
     --orange: #f78c6a;
     --yellow: #f2c167;
     --light-green: #c3e88d;
@@ -275,7 +276,17 @@ button i {
     padding: 0 0 0 4em;
     border-left: 2px solid var(--orange);
 }
+.eventer {
+    padding: 0 0 0 4em;
+    border-left: 2px solid var(--pink);
+}
 /* Code-block */
+.blocks-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 2.5em));
+    grid-gap: 5em;
+}
 .code-block {
     margin: 2em 0;
     padding: 2em;
@@ -284,6 +295,17 @@ button i {
     background-color: var(--text-dark);
     box-shadow: 0 40px 50px -30px rgba(38, 38, 41, .75);
     font-family: var(--font-code);
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.code-block::-webkit-scrollbar {
+    height: 12px;
+}
+.cb-short {
+    width: 60%;
+}
+.cb-long {
+    width: 100%;
 }
 .code-block-button-wrapper {
     margin: 5em 0 0 0;
@@ -292,6 +314,7 @@ button i {
     margin: .4em 0;
     color: var(--text-light);
     font-size: calc(var(--paragraph) + .25rem);
+    white-space: nowrap;
 }
 .code-block .small-space {
     margin: 0;
@@ -299,7 +322,10 @@ button i {
     line-height: .35em;
 }
 .code-block .indent {
-    margin: 0 0 0 1em;
+    margin: 0 0 0 1.4em;
+}
+.code-block p .italic {
+    font-style: italic;
 }
 /* JS Colors */
 .code-block p .var {
@@ -325,6 +351,12 @@ button i {
 }
 .code-block p .comment {
     color: var(--gray-dark);
+}
+.code-block p .brackets {
+    color: var(--blue);
+}
+.code-block p .element {
+    color: var(--red);
 }
 /* --------- */
 /* Selection */
@@ -362,6 +394,10 @@ button i {
         --heading-medium: 4.2rem;
         --heading-small: 3rem;
     }
+    /* Code Block */
+    .cb-short {
+        width: 75%;
+    }
 }
 @media only screen and (max-width: 1220px) {
 
@@ -387,7 +423,17 @@ button i {
     .funksjoner {
         padding: 0 0 0 3em;
     }
+    .eventer {
+        padding: 0 0 0 3em;
+    }
     /* Code Block */
+    .blocks-grid {
+        grid-template-columns: repeat(2, calc(50% - 2em));
+        grid-gap: 4em;
+    }
+    .cb-short {
+        width: 85%;
+    }
     .code-block {
         padding: 1.85em;
     }
@@ -418,7 +464,18 @@ button i {
     .funksjoner {
         padding: 0 0 0 2em;
     }
+    .eventer {
+        padding: 0 0 0 2em;
+    }
     /* Code Block */
+    .blocks-grid {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 50%);
+        grid-gap: 1em;
+    }
+    .cb-short {
+        width: 100%;
+    }
     .code-block {
         padding: 1.5em;
     }
