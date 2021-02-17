@@ -61,6 +61,7 @@
                     <a class="link" href="https://www.w3schools.com/js/js_number_methods.asp" target="_blank"><span>5.</span>Number Methods</a>
                     <a class="link" href="https://www.w3schools.com/js/js_math.asp" target="_blank"><span>6.</span>Math</a>
                     <a class="link" href="https://www.w3schools.com/js/js_booleans.asp" target="_blank"><span>7.</span>Boolean</a>
+                    <a class="link" href="https://www.w3schools.com/js/js_timing.asp" target="_blank"><span>8.</span>Timing</a>
                 </p>
             </div>
         </article>
