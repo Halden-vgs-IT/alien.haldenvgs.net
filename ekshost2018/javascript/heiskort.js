@@ -16,18 +16,41 @@ let prices = [200, 400, 600, 800, 1000, 1000, 1000];
 days.innerHTML = "1";
 daysFinal.innerHTML = "1";
 
-// NOT DONE!!
-//function discount() {
-//    if (slider.value) {
-//        for (let i = 0; i < prices.length; i++) {
-//            prices[i] = prices[i] - prices[i] * 0.25;
-//        }
-//        listener();
-//    } else {
-//        prices = [200, 400, 600, 800, 1000, 1000, 1000];
-//        listener();
-//    }
-//}
+let barn = document.getElementById("barn");
+let barnButton = document.getElementById("barn-button");
+let voksen = document.getElementById("voksen");
+let voksenButton = document.getElementById("voksen-button");
+let pageBottom = document.getElementsByClassName("page-bottom");
+let ageFinal = document.getElementById("age-final")
+
+barn.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    pageBottom[0].style.display = "block";
+    voksenButton.style.opacity = ".5";
+    voksenButton.style.border = "1px solid var(--bc-gray)";
+    barnButton.style.opacity = "1";
+    barnButton.style.border = "1px solid var(--black)";
+    barnButton.style.borderRadius = "4px";
+
+    ageFinal.innerHTML = "Barn";
+
+});
+voksen.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    pageBottom[0].style.display = "block";
+    barnButton.style.opacity = ".5";
+    barnButton.style.border = "1px solid var(--bc-gray)";
+    voksenButton.style.opacity = "1";
+    voksenButton.style.border = "1px solid var(--black)";
+    voksenButton.style.borderRadius = "4px";
+
+    ageFinal.innerHTML = "Voksen";
+
+});
 
 let listener = function () {
     window.requestAnimationFrame(function () {

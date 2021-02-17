@@ -32,6 +32,8 @@ homeLink[0].addEventListener('click', function(event) {
     pageHeiskort.style.display = "none";
     pageHytter.style.display = "none";
 
+    location.reload();
+
 });
 // Home Link 1
 homeLink[1].addEventListener('click', function(event) {

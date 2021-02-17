@@ -27,15 +27,58 @@ let vinter = [
 ]
 
 
+// Granbo
+let hytterView = document.getElementById("hytter-view");
+let granboView = document.getElementById("granbo-view");
+let granbo = document.getElementById("granbo");
+let granhaugView = document.getElementById("granhaug-view");
+let granhaug = document.getElementById("granhaug");
+let granstuaView = document.getElementById("granstua-view");
+let granstua = document.getElementById("granstua");
+let grantoppenView = document.getElementById("grantoppen-view");
+let grantoppen = document.getElementById("grantoppen");
+
+granboView.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    hytterView.style.display = "none";
+    granbo.style.display = "grid";
+
+});
+granhaugView.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    hytterView.style.display = "none";
+    granhaug.style.display = "grid";
+
+});
+granstuaView.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    hytterView.style.display = "none";
+    granstua.style.display = "grid";
+
+});
+grantoppenView.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    hytterView.style.display = "none";
+    grantoppen.style.display = "grid";
+
+});
 
 // Granbo
-let pageLeftImage = document.getElementsByClassName("page-left-image");
+let hytterLeftImage = document.getElementsByClassName("hytter-left-image");
 let granbo1 = document.getElementById("granbo1");
 let granbo2 = document.getElementById("granbo2");
 let granbo3 = document.getElementById("granbo3");
 let granbo4 = document.getElementById("granbo4");
 
-pageLeftImage[0].addEventListener('click', function(event) {
+hytterLeftImage[0].addEventListener('click', function(event) {
 
     event.preventDefault();
 
@@ -45,7 +88,7 @@ pageLeftImage[0].addEventListener('click', function(event) {
     granbo4.style.display = "none";
 
 });
-pageLeftImage[1].addEventListener('click', function(event) {
+hytterLeftImage[1].addEventListener('click', function(event) {
 
     event.preventDefault();
 
@@ -55,7 +98,7 @@ pageLeftImage[1].addEventListener('click', function(event) {
     granbo4.style.display = "none";
 
 });
-pageLeftImage[2].addEventListener('click', function(event) {
+hytterLeftImage[2].addEventListener('click', function(event) {
 
     event.preventDefault();
 
@@ -65,7 +108,7 @@ pageLeftImage[2].addEventListener('click', function(event) {
     granbo4.style.display = "none";
 
 });
-pageLeftImage[3].addEventListener('click', function(event) {
+hytterLeftImage[3].addEventListener('click', function(event) {
 
     event.preventDefault();
 

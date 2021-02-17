@@ -279,56 +279,60 @@
 
                 <p><span>Alder</span> <span class="page-undertitle">(Barn fra 0 - 12 år)</span></p>
                 <div class="page-buttons flexbox-left">
-                    <div class="page-button-wrapper">
-                        <button>Barn</button>
+                    <div id="barn" class="page-button-wrapper">
+                        <button id="barn-button">Barn</button>
                     </div>
-                    <div class="page-button-wrapper">
-                        <button>Voksen</button>
-                    </div>
-                </div>
-
-                <p>Antall dager</p>
-                <div class="container">
-                    <div class="upper flexbox-space">
-                        <div class="left">
-                            <span id="days"></span> dager
-                        </div>
-                        <div class="right flexbox-right">
-                            <span id="disc1" class="price-disc">&nbsp1200kr&nbsp</span>
-                            <span id="disc2" class="price-disc">&nbsp1400kr&nbsp</span>
-                            <span class="price"><span id="price">200</span>kr</span>
-                            <span class="discount">16.67% <span class="hide">rabatt<span></span>
-                        </div>
-                    </div>
-                    <div class="slider">
-                        <input type="range" min="1" max="7" value="1" id="slider" aria-label="">
+                    <div id="voksen" class="page-button-wrapper">
+                        <button id="voksen-button">Voksen</button>
                     </div>
                 </div>
 
-                <p>Totalt</p>
-                <div class="buy-note flexbox-space">
-                    <div class="left flexbox-left">
-                        <p class="ticket"><i class="uil uil-ticket"></i></p>
-                        <div class="buy-note-item flexbox-col-left">
-                            <h3>Heiskort</h3>
-                            <p>Voksen</p>
+                <div class="page-bottom">
+
+                    <p>Antall dager</p>
+                    <div class="container">
+                        <div class="upper flexbox-space">
+                            <div class="left">
+                                <span id="days"></span> dager
+                            </div>
+                            <div class="right flexbox-right">
+                                <span id="disc1" class="price-disc">&nbsp1200kr&nbsp</span>
+                                <span id="disc2" class="price-disc">&nbsp1400kr&nbsp</span>
+                                <span class="price"><span id="price">200</span>kr</span>
+                                <span class="discount">16.67% <span class="hide">rabatt<span></span>
+                            </div>
                         </div>
-                        <div class="buy-note-days flexbox-col-left">
-                            <h4>Antall dager</h4>
-                            <p><span id="days-final"></span> dager</p>
-                        </div>
-                    </div>
-                    <div class="right flexbox">
-                        <div class="buy-note-price">
-                            <p>
-                                <span id="price-final">200</span>kr
-                                <span class="discount">16.67</span>
-                            </p>
-                        </div>
-                        <div class="buy-note-button">
-                            <button type="button" class="button btn-primary purchase-link"><i class="uil uil-shopping-bag"></i> Kjøp<div class="btn-secondary"></div></button>
+                        <div class="slider">
+                            <input type="range" min="1" max="7" value="1" id="slider" aria-label="">
                         </div>
                     </div>
+
+                    <p>Totalt</p>
+                    <div class="buy-note flexbox-space">
+                        <div class="left flexbox-left">
+                            <p class="ticket"><i class="uil uil-ticket"></i></p>
+                            <div class="buy-note-item flexbox-col-left">
+                                <h3>Heiskort</h3>
+                                <p id="age-final"></p>
+                            </div>
+                            <div class="buy-note-days flexbox-col-left">
+                                <h4>Antall dager</h4>
+                                <p><span id="days-final"></span> dager</p>
+                            </div>
+                        </div>
+                        <div class="right flexbox">
+                            <div class="buy-note-price">
+                                <p>
+                                    <span id="price-final">200</span>kr
+                                    <span class="discount">16.67</span>
+                                </p>
+                            </div>
+                            <div class="buy-note-button">
+                                <button type="button" class="button btn-primary purchase-link"><i class="uil uil-shopping-bag"></i> Kjøp<div class="btn-secondary"></div></button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -346,53 +350,89 @@
     <!-- #Main -->
     <main id="main-hytter" class="flexbox-col">
 
-        <!-- Page 2 -->
-        <div class="page-inner-2 flexbox-col">
+        <!-- Hytter -->
+        <div class="hytter flexbox-col">
 
-            <!-- Page 2 Navbar -->
-            <div class="page-2-navbar flexbox-left">
+            <!-- Hytter Navbar -->
+            <div class="hytter-navbar flexbox-left">
                 <div class="page-top">
                     <a class="back-to-home home-link"><i class="uil uil-arrow-left"></i> Tilbake til forsiden</a>
                 </div>
             </div>
 
-            <!-- Page 2 Main -->
-            <div class="page-2-main">
+            <div id="hytter-view" class="flexbox-col">
+
+                <div class="hytter-image-view">
+                    <div id="granbo-view" class="hytter-view-wrapper flexbox-col-left">
+                        <div class="hytter-view-inner">
+                            <img src="images/granbo.jpg" alt="">
+                        </div>
+                        <h3 class="hytter-view-title">Granbo</h3>
+                    </div>
+                    <div id="granhaug-view" class="hytter-view-wrapper flexbox-col-left">
+                        <div class="hytter-view-inner">
+                            <img src="images/granhaug.jpg" alt="">
+                        </div>
+                        <h3 class="hytter-view-title">Granhaug</h3>
+                    </div>
+                    <div id="granstua-view" class="hytter-view-wrapper flexbox-col-left">
+                        <div class="hytter-view-inner">
+                            <img src="images/granstua.jpg" alt="">
+                        </div>
+                        <h3 class="hytter-view-title">Granstua</h3>
+                    </div>
+                    <div id="grantoppen-view" class="hytter-view-wrapper flexbox-col-left">
+                        <div class="hytter-view-inner">
+                            <img src="images/grantoppen.jpg" alt="">
+                        </div>
+                        <h3 class="hytter-view-title">Grantoppen</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ===== *
+
+                Granbo
+
+          * ====== -->
+            <!-- Hytter Inner -->
+            <div id="granbo" class="hytter-inner">
 
                 <!-- Page Header -->
-                <div class="page-left flexbox-right-start">
+                <div class="hytter-left flexbox-right-start">
 
                     <!-- Page Left Image -->
-                    <div class="page-left-image-wrapper flexbox">
-                        <div class="page-left-image-wrapper-inner flexbox">
+                    <div class="hytter-left-image-wrapper flexbox">
+                        <div class="hytter-left-image-wrapper-inner flexbox">
                             <img id="granbo1" src="images/granbo.jpg" alt="">
                             <img id="granbo2" class="hidden" src="images/granbo01.jpg" alt="">
                             <img id="granbo3" class="hidden" src="images/granbo02.jpg" alt="">
                             <img id="granbo4" class="hidden" src="images/granbo03.jpg" alt="">
                         </div>
-                        <div class="page-left-images">
-                            <div class="page-left-image flexbox">
+                        <div class="hytter-left-images">
+                            <div class="hytter-left-image flexbox">
                                 <img src="images/granbo.jpg" alt="">
                             </div>
-                            <div class="page-left-image flexbox">
+                            <div class="hytter-left-image flexbox">
                                 <img src="images/granbo01.jpg" alt="">
                             </div>
-                            <div class="page-left-image flexbox">
+                            <div class="hytter-left-image flexbox">
                                 <img src="images/granbo02.jpg" alt="">
                             </div>
-                            <div class="page-left-image flexbox">
+                            <div class="hytter-left-image flexbox">
                                 <img src="images/granbo03.jpg" alt="">
                             </div>
-                            <div class="page-left-image flexbox">
+                            <div class="hytter-left-image flexbox">
                             </div>
                         </div>
                         <!-- Page Left Glow -->
-                        <img class="page-left-glow" src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2134&q=80" alt="">
+                        <img class="hytter-left-glow" src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2134&q=80" alt="">
                     </div>
 
                 </div>
 
-                <div class="page-2-content flexbox-col-left">
+                <div class="hytter-content flexbox-col-left">
 
                     <div class="page-title">
                         <p>Hytter</p>
@@ -437,7 +477,7 @@
                         <p>5 reviews</p>
                     </div>
 
-                    <div class="page-2-paragraph">
+                    <div class="hytter-paragraph">
                         <p>
                             <span><i class="uil uil-bed"></i> 6</span>
                             <span><i class="uil uil-thumbs-up"></i> Høy</span>
@@ -445,12 +485,303 @@
                             <span><i class="uil uil-money-bill"></i> 15 000</span>
                         </p>
                         <p>Granbo er en av våde mest populære hytter...</p>
-                        <!--<ul>
-                            <li>Antall sengeplasser: 6</li>
-                            <li>Standard: Høy</li>
-                            <li>Badestue: Nei</li>
-                            <li>Ukepris: 15 000</li>
-                        </ul>-->
+                    </div>
+
+                    <div class="buy-note-button">
+                        <button type="button" class="button btn-primary purchase-link"><i class="uil uil-estate"></i> Lei for 15 000kr<div class="btn-secondary"></div></button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- ===== *
+
+                Granhaug
+
+          * ====== -->
+            <!-- Hytter Inner -->
+            <div id="granhaug" class="hytter-inner">
+
+                <!-- Page Header -->
+                <div class="hytter-left flexbox-right-start">
+
+                    <!-- Page Left Image -->
+                    <div class="hytter-left-image-wrapper flexbox">
+                        <div class="hytter-left-image-wrapper-inner flexbox">
+                            <img src="images/granhaug.jpg" alt="">
+                        </div>
+                        <div class="hytter-left-images">
+                            <div class="hytter-left-image flexbox">
+                                <img src="images/granhaug.jpg" alt="">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                        </div>
+                        <!-- Page Left Glow -->
+                        <img class="hytter-left-glow" src="images/granhaug.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="hytter-content flexbox-col-left">
+
+                    <div class="page-title">
+                        <p>Hytter</p>
+                        <h1>Granhaug</h1>
+                    </div>
+
+                    <div class="stars flexbox">
+                        <div class="star first filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_33" data-name="Layer 33" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-33{fill:var(--yellow);}</style></defs>
+                                <path class="cls-33" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-33" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-33" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                            </svg>
+                        </div>
+                        <div class="star filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_34" data-name="Layer 34" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-34{fill:var(--yellow);}</style></defs>
+                                <path class="cls-34" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-34" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                            </svg>
+                        </div>
+                        <div class="star filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_34" data-name="Layer 34" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-34{fill:var(--yellow);}</style></defs>
+                                <path class="cls-34" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-34" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                            </svg>
+                        </div>
+                        <div class="star empty flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
+                            </svg>
+                        </div>
+                        <div class="star empty flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
+                            </svg>
+                        </div>
+                        <p>5 reviews</p>
+                    </div>
+
+                    <div class="hytter-paragraph">
+                        <p>
+                            <span><i class="uil uil-bed"></i> 6</span>
+                            <span><i class="uil uil-thumbs-up"></i> Høy</span>
+                            <span><i class="uil uil-bath"></i> Nei</span>
+                            <span><i class="uil uil-money-bill"></i> 15 000</span>
+                        </p>
+                        <p>Granbo er en av våde mest populære hytter...</p>
+                    </div>
+
+                    <div class="buy-note-button">
+                        <button type="button" class="button btn-primary purchase-link"><i class="uil uil-estate"></i> Lei for 15 000kr<div class="btn-secondary"></div></button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- ===== *
+
+                Granstua
+
+          * ====== -->
+            <!-- Hytter Inner -->
+            <div id="granstua" class="hytter-inner">
+
+                <!-- Page Header -->
+                <div class="hytter-left flexbox-right-start">
+
+                    <!-- Page Left Image -->
+                    <div class="hytter-left-image-wrapper flexbox">
+                        <div class="hytter-left-image-wrapper-inner flexbox">
+                            <img src="images/granstua.jpg" alt="">
+                        </div>
+                        <div class="hytter-left-images">
+                            <div class="hytter-left-image flexbox">
+                                <img src="images/granstua.jpg" alt="">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                        </div>
+                        <!-- Page Left Glow -->
+                        <img class="hytter-left-glow" src="images/granstua.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="hytter-content flexbox-col-left">
+
+                    <div class="page-title">
+                        <p>Hytter</p>
+                        <h1>Granstua</h1>
+                    </div>
+
+                    <div class="stars flexbox">
+                        <div class="star first filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_33" data-name="Layer 33" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-33{fill:var(--yellow);}</style></defs>
+                                <path class="cls-33" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-33" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-33" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                            </svg>
+                        </div>
+                        <div class="star filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_34" data-name="Layer 34" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-34{fill:var(--yellow);}</style></defs>
+                                <path class="cls-34" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-34" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                            </svg>
+                        </div>
+                        <div class="star filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_34" data-name="Layer 34" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-34{fill:var(--yellow);}</style></defs>
+                                <path class="cls-34" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-34" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                            </svg>
+                        </div>
+                        <div class="star empty flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
+                            </svg>
+                        </div>
+                        <div class="star empty flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
+                            </svg>
+                        </div>
+                        <p>5 reviews</p>
+                    </div>
+
+                    <div class="hytter-paragraph">
+                        <p>
+                            <span><i class="uil uil-bed"></i> 6</span>
+                            <span><i class="uil uil-thumbs-up"></i> Høy</span>
+                            <span><i class="uil uil-bath"></i> Nei</span>
+                            <span><i class="uil uil-money-bill"></i> 15 000</span>
+                        </p>
+                        <p>Granbo er en av våde mest populære hytter...</p>
+                    </div>
+
+                    <div class="buy-note-button">
+                        <button type="button" class="button btn-primary purchase-link"><i class="uil uil-estate"></i> Lei for 15 000kr<div class="btn-secondary"></div></button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- ===== *
+
+                Grantoppen
+
+          * ====== -->
+            <!-- Hytter Inner -->
+            <div id="grantoppen" class="hytter-inner">
+
+                <!-- Page Header -->
+                <div class="hytter-left flexbox-right-start">
+
+                    <!-- Page Left Image -->
+                    <div class="hytter-left-image-wrapper flexbox">
+                        <div class="hytter-left-image-wrapper-inner flexbox">
+                            <img src="images/grantoppen.jpg" alt="">
+                        </div>
+                        <div class="hytter-left-images">
+                            <div class="hytter-left-image flexbox">
+                                <img src="images/grantoppen.jpg" alt="">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                            <div class="hytter-left-image flexbox">
+                            </div>
+                        </div>
+                        <!-- Page Left Glow -->
+                        <img class="hytter-left-glow" src="images/grantoppen.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="hytter-content flexbox-col-left">
+
+                    <div class="page-title">
+                        <p>Hytter</p>
+                        <h1>Grantoppen</h1>
+                    </div>
+
+                    <div class="stars flexbox">
+                        <div class="star first filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_33" data-name="Layer 33" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-33{fill:var(--yellow);}</style></defs>
+                                <path class="cls-33" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-33" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-33" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                            </svg>
+                        </div>
+                        <div class="star filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_34" data-name="Layer 34" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-34{fill:var(--yellow);}</style></defs>
+                                <path class="cls-34" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-34" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                            </svg>
+                        </div>
+                        <div class="star filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_34" data-name="Layer 34" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-34{fill:var(--yellow);}</style></defs>
+                                <path class="cls-34" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-34" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                            </svg>
+                        </div>
+                        <div class="star empty flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
+                            </svg>
+                        </div>
+                        <div class="star empty flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
+                            </svg>
+                        </div>
+                        <p>5 reviews</p>
+                    </div>
+
+                    <div class="hytter-paragraph">
+                        <p>
+                            <span><i class="uil uil-bed"></i> 6</span>
+                            <span><i class="uil uil-thumbs-up"></i> Høy</span>
+                            <span><i class="uil uil-bath"></i> Nei</span>
+                            <span><i class="uil uil-money-bill"></i> 15 000</span>
+                        </p>
+                        <p>Granbo er en av våde mest populære hytter...</p>
                     </div>
 
                     <div class="buy-note-button">
