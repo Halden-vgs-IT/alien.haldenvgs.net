@@ -57,9 +57,10 @@
                     <a class="link indent" href="https://www.w3schools.com/js/js_array_sort.asp" target="_blank"><span>3.1</span>Array Sort</a>
                 </p>
                 <p class="flexbox-col-left">
-                    <a class="link" href="https://www.w3schools.com/js/js_number_methods.asp" target="_blank"><span>4.</span>Number Methods</a>
-                    <a class="link" href="https://www.w3schools.com/js/js_math.asp" target="_blank"><span>5.</span>Math</a>
-                    <a class="link" href="https://www.w3schools.com/js/js_booleans.asp" target="_blank"><span>6.</span>Boolean</a>
+                    <a class="link" href="https://www.w3schools.com/js/js_string_methods.asp" target="_blank"><span>4.</span>String Methods</a>
+                    <a class="link" href="https://www.w3schools.com/js/js_number_methods.asp" target="_blank"><span>5.</span>Number Methods</a>
+                    <a class="link" href="https://www.w3schools.com/js/js_math.asp" target="_blank"><span>6.</span>Math</a>
+                    <a class="link" href="https://www.w3schools.com/js/js_booleans.asp" target="_blank"><span>7.</span>Boolean</a>
                 </p>
             </div>
         </article>
@@ -407,6 +408,7 @@
                 <p>
                     <span class="var">let</span>
                     <span class="var-name">i</span><span class="unique">;</span></p>
+                <p class="small-space">&nbsp</p>
                 <p>
                     <span class="var">for</span>
                     <span class="unique">(</span><span class="var-name">i</span>
@@ -420,11 +422,9 @@
                 <p>
                     <span class="indent var-name">text</span>
                     <span class="unique">+=</span>
-                    <span class="text">"The number is "</span>
+                    <span class="text">"&lt;br/&gt;Tallet er "</span>
                     <span class="unique">+</span>
-                    <span class="var-name">i</span>
-                    <span class="unique">+</span>
-                    <span class="text">"&#60;br/&#62;"</span><span class="unique">;</span>
+                    <span class="var-name">i</span><span class="unique">;</span>
                 <p>
                     <span class="unique">}</span></p>
             </div>
@@ -439,6 +439,33 @@
                     <span class="unique">{</span></p>
                 <p>
                     <span class="indent comment">// Koden som skal kjøres</span>
+                <p>
+                    <span class="unique">}</span></p>
+            </div>
+            <div class="code-block cb-short">
+                <p>
+                    <span class="var">let</span>
+                    <span class="var-name">tullball</span>
+                    <span class="unique">=</span>
+                    <span class="text">""</span><span class="unique">;</span></p>
+                <p>
+                    <span class="var">let</span>
+                    <span class="var-name">i</span>
+                    <span class="unique">=</span>
+                    <span class="number">0</span><span class="unique">;</span></p>
+                <p class="small-space">&nbsp</p>
+                <p>
+                    <span class="var">while</span>
+                    <span class="unique">(</span><span class="var-name">i</span>
+                    <span class="unique">&#60;</span>
+                    <span class="number">10</span><span class="unique">)</span>
+                    <span class="unique">{</span></p>
+                <p>
+                    <span class="indent var-name">tullball</span>
+                    <span class="unique">+=</span>
+                    <span class="text">"&lt;br/&gt;Tallet er "</span>
+                    <span class="unique">+</span>
+                    <span class="var-name">i</span><span class="unique">;</span></p>
                 <p>
                     <span class="unique">}</span></p>
             </div>
@@ -471,6 +498,25 @@
                     <span class="indent text">"hus"</span>
                 <p>
                     <span class="unique">]</span></p>
+                <p class="small-space">&nbsp</p>
+                <p>
+                    <span class="ident">document</span><span class="evt">.getElementById</span><span class="unique">(</span><span class="text">"rareting"</span><span class="unique">).</span><span class="evt">innerHTML</span>
+                    <span class="unique">=</span>
+                    <span class="var-name">arraynavn</span><span class="unique">[</span><span class="number">1</span><span class="unique">]</span><span class="unique">;</span></p>
+                <p class="text-box-wrapper">
+                    <span class="comment">&lt;!-- Hva kommer til å vises her? --&gt;</span></p>
+                <p>
+                    <span class="brackets">&lt;</span><span class="element">p</span> <span class="ident">id</span><span class="text">="rareting"</span><span class="brackets">&gt;</span><span id="rareting"> </span><span class="brackets">&lt;/</span><span class="element">p<span class="brackets">&gt;</span></span></p>
+                <div class="code-block-button-wrapper">
+                    <script>
+                        let arraynavn = [
+                            "bil",
+                            "båt",
+                            "hus"
+                        ]
+                    </script>
+                    <button onclick="document.getElementById('rareting').innerHTML = arraynavn[1];" class="secondary flexbox"><i class="uil uil-brackets-curly"></i> Test koden!</button>
+                </div>
             </div>
         </div>
     </section>
