@@ -29,7 +29,7 @@
     <!-- Main Content -->
     <section class="content">
         <!-- Texts -->
-        <h2>Content</h2>
+        <h2>Innhold</h2>
         <div class="content-list">
             <p class="flexbox-col-left">
                 <a class="variabler-list" href="#variabler"><span>1.</span>Variabler</a>
