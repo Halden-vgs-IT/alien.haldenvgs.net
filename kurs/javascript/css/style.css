@@ -61,7 +61,8 @@ header img {
     max-width: 140%;
     min-height: 100%;
     position: absolute;
-    filter: blur(2rem);
+    transform: scale(2, 2);
+    filter: blur(5rem);
     object-fit: cover;
     z-index: 2;
 }
@@ -217,6 +218,7 @@ button i {
     max-width: 120%;
     min-height: 100%;
     position: absolute;
+    transform: scale(1, 1);
     object-fit: cover;
     filter: none;
 }
@@ -263,7 +265,7 @@ button i {
     line-height: 1em;
 }
 .content .block {
-    margin: 4em 0;
+    margin: 4em 0 0 0;
 }
 .variabler {
     padding: 0 0 0 4em;
