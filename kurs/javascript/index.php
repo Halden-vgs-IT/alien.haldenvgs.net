@@ -81,7 +81,7 @@
                         <span class="unique">=</span>
                         <span class="text">"Hello World!"</span><span class="unique">;</span></p>
                     <p>
-                        <span class="ident">console</span><span class="evt">.log</span><span class="unique">(</span><span class="var-name">variabel</span><span class="unique">);</span></p>
+                        <span class="ident">console</span><span class="evt">.log</span><span class="unique">(</span><span class="var-name">helloWorld</span><span class="unique">);</span></p>
                     <div class="code-block-button-wrapper">
                         <button onclick="console.log('Hello World!')" class="secondary flexbox"><i class="uil uil-brackets-curly"></i> Test koden!</button>
                     </div>
@@ -96,7 +96,7 @@
                         <span class="unique">=</span>
                         <span class="text">"Hello World!"</span><span class="unique">;</span></p>
                     <p>
-                        <span class="evt">alert</span><span class="unique">(</span><span class="var-name">variabel</span><span class="unique">);</span></p>
+                        <span class="evt">alert</span><span class="unique">(</span><span class="var-name">helloWorld</span><span class="unique">);</span></p>
                     <div class="code-block-button-wrapper">
                         <button onclick="alert('Hello World!')" class="secondary flexbox"><i class="uil uil-brackets-curly"></i> Test koden!</button>
                     </div>
