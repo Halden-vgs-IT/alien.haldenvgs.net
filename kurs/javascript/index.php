@@ -46,7 +46,7 @@
         <!-- Useful links -->
         <article class="content">
             <!-- Texts -->
-            <h2>Nyttige lenker</h2>
+            <h2>Nyttige lenker!</h2>
             <p class="undertitle flexbox-left">Nedenfor er lenker til relevant info innen javascript</p>
             <div class="content-list">
                 <p class="flexbox-col-left">
