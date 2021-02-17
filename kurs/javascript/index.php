@@ -50,7 +50,8 @@
         <h3 class="title">Generelt</h3>
         <div class="blocks-grid">
             <div class="block">
-                <p class="undertitle flexbox-left">Eksempel hvor &#60;script&#62; ligger i &#60;head&#62;</p>
+                <p class="undertitle flexbox-left">Eksempel hvor <span class="wrap"><span class="brackets">&#60;</span><span class="element">script</span><span class="brackets">&#62;</span></span> ligger i <span class="wrap"><span class="brackets">&#60;</span><span class="element">html</span><span class="brackets">&#62;</span></span></p>
+                <p class="undertitle-text flexbox-left">Om <span class="wrap"><span class="brackets">&#60;</span><span class="element">script</span><span class="brackets">&#62;</span></span> skal ligge i <span class="wrap"><span class="brackets">&#60;</span><span class="element">head</span><span class="brackets">&#62;</span></span> må den ha attributen <span class="wrap"><span class="italic ident">defer</span></span></p>
                 <div class="code-block cb-long">
                     <p>
                         <span class="brackets">&#60;</span><span class="element">html</span>
@@ -77,7 +78,7 @@
             </div>
 
             <div class="block">
-                <p class="undertitle flexbox-left">Eksempel hvor &#60;script&#62; ligger i bunnen av &#60;html&#62; dokumentet</p>
+                <p class="undertitle flexbox-left">Eksempel hvor <span class="wrap"><span class="brackets">&#60;</span><span class="element">script</span><span class="brackets">&#62;</span></span> ligger i bunnen av <span class="wrap"><span class="brackets">&#60;</span><span class="element">html</span><span class="brackets">&#62;</span></span> dokumentet</p>
                 <div class="code-block cb-long">
                     <p>
                         <span class="brackets">&#60;</span><span class="element">html</span>
@@ -138,6 +139,7 @@
         </div>
         <div class="block">
             <p id="bruke-variabler" class="undertitle flexbox-left">1.2 Bruke variabler</p>
+            <p class="undertitle-text">for å åpne konsollen kan du trykke: <b>Command + Option + J</b> (Mac) eller <b>Control + Shift + J</b> (Windows, Linux, Chrome OS)</p>
             <div class="code-block-wrapper flexbox-left">
                 <div class="code-block cb-short">
                     <p>

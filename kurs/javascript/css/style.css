@@ -265,6 +265,37 @@ button i {
     margin: 0;
     line-height: 1em;
 }
+.content .undertitle-text {
+    margin: .5em 0 0 0;
+    line-height: 1.2em;
+}
+.content .undertitle .wrap {
+    margin: 0 .4em;
+    padding: .45em .55em;
+    border-radius: .35em;
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    line-height: 1.2em;
+}
+.content .undertitle-text .wrap {
+    margin: 0 .4em;
+    padding: .45em .55em;
+    border-radius: .35em;
+    background-color: var(--text-dark);
+    color: var(--text-light);
+}
+.wrap .italic {
+    font-style: italic;
+}
+.wrap .ident {
+    color: var(--yellow);
+}
+.wrap .brackets {
+    color: var(--blue);
+}
+.wrap .element {
+    color: var(--red);
+}
 .content .block {
     margin: 4em 0 0 0;
 }
