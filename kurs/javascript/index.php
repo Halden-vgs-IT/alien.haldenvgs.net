@@ -468,6 +468,8 @@
                     <span class="unique">+</span>
                     <span class="var-name">i</span><span class="unique">;</span></p>
                 <p>
+                    <span class="indent var-name">i</span><span class="unique">++;</span></p>
+                <p>
                     <span class="unique">}</span></p>
             </div>
         </div>
