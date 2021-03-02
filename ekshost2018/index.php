@@ -362,6 +362,13 @@
 
             <div id="hytter-view" class="flexbox-col">
 
+                <div class="hytter-video-wrapper">
+                    <div class="video-overlay"></div>
+                    <video id="hytter-video" loop autoplay preload="auto">
+                        <source src="videos/hyttefelt.m4v" type="video/mp4">
+                    </video>
+                </div>
+
                 <div class="hytter-image-view">
                     <div id="granbo-view" class="hytter-view-wrapper flexbox-col-left">
                         <div class="hytter-view-inner">
@@ -853,5 +860,11 @@
 
     // Accepts any class name
     var rellax = new Rellax('.rellax');
+
+    // Video playing with timeout
+    let vid = document.querySelector("#hytter-video");
+    vid.autoplay = true;
+    vid.volume = 0;
+    vid.load();
 </script>
 </html>

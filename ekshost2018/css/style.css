@@ -747,10 +747,31 @@ h1 {
 #page-hytter {
     display: none;
 }
+/* Video */
+.hytter-video-wrapper {
+    margin: 0 0 5em 0;
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    overflow: hidden;
+}
+.video-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .25);
+    z-index: 2;
+}
+.hytter-video-wrapper video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    filter: hue-rotate(-5deg) saturate(1.5);
+    /* filter: hue-rotate(180deg) saturate(1.5); <-- Ser egt veldig nice ut, men da må jeg endre resten også */
+}
 /* Main */
 #main-hytter {
     width: 100%;
-    height: 100vh;
 }
 .hytter {
     width: 75%;
