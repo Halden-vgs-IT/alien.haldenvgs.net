@@ -50,6 +50,11 @@ homeLink[1].addEventListener('click', function(event) {
     pageHome.style.display = "block";
     pageHeiskort.style.display = "none";
     pageHytter.style.display = "none";
+    hytterView.style.display = "flex";
+    granbo.style.display = "none";
+    granhaug.style.display = "none";
+    granstua.style.display = "none";
+    grantoppen.style.display = "none";
 
 });
 // Heiskort Link 1
@@ -128,7 +133,32 @@ purchaseLink[0].addEventListener('click', function(event) {
     payPriceText.innerHTML = price.innerHTML;
 
     setTimeout(function() {
-        location.reload();
+        pageHome.style.display = "block";
+        pageHeiskort.style.display = "none";
+        pageHytter.style.display = "none";
+        pagePurchase.style.display = "none";
+
+        pageBottom[0].style.display = "none";
+        barnButton.style.opacity = "1";
+        barnButton.style.border = "1px solid var(--bc-gray)";
+        voksenButton.style.opacity = "1";
+        voksenButton.style.border = "1px solid var(--bc-gray)";
+
+        slider.value = 1;
+        price.innerHTML = Number(prices[0]).toFixed(0);
+        priceFinal.innerHTML = Number(prices[0]).toFixed(0);
+        days.innerHTML = "1";
+        daysFinal.innerHTML = "1";
+        discount[0].style.display = "none";
+        discount[1].style.display = "none";
+        disc1.style.display = "none";
+        disc2.style.display = "none";
+        slider.style.background =
+            "linear-gradient(to right, #41A0FF 0%, #41A0FF " +
+            "0" +
+            "%, #eaeefb " +
+            "0" +
+            "%, #eaeefb 100%)";
     }, 2500);
 
 });

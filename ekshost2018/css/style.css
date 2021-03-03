@@ -751,23 +751,92 @@ h1 {
 .hytter-video-wrapper {
     margin: 0 0 5em 0;
     width: 100%;
-    height: 65vh;
+    height: 50vh;
     position: relative;
     overflow: hidden;
+}
+/* Player Button */
+.player-button-wrapper {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+}
+.circle {
+    stroke: var(--primary);
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+    transition: all .5s ease-in-out;
+    opacity: .3;
+}
+.play-but {
+    display: inline-block;
+    transform: scale(.5, .5);
+    transition: all .5s ease;
+}
+.play-but .triangle {
+    stroke: var(--white);
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    transform: translateY(0);
+    transition: all .7s ease-in-out;
+}
+.play-but:hover .triangle {
+    stroke-dashoffset: 0;
+    stroke: var(--primary);
+    animation: nudge .7s ease-in-out;
+    opacity: 1;
+}
+.play-but:hover .circle {
+    stroke-dashoffset: 0;
+    opacity: 1;
 }
 .video-overlay {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(0, 0, 0, .25);
+    background-color: rgba(0, 0, 0, .55);
     z-index: 2;
 }
-.hytter-video-wrapper video {
+.hytter-video-wrapper img {
     min-width: 100%;
+    max-height: 200%;
     min-height: 100%;
     position: absolute;
     filter: hue-rotate(-5deg) saturate(1.5);
     /* filter: hue-rotate(180deg) saturate(1.5); <-- Ser egt veldig nice ut, men da må jeg endre resten også */
+}
+/* Player */
+.player-wrapper {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    z-index: 100;
+}
+.player {
+    width: 65%;
+    z-index: 105;
+}
+.player video {
+    width: 100%;
+    z-index: 105;
+}
+.player-background {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .75);
+    z-index: 102;
 }
 /* Main */
 #main-hytter {
@@ -784,48 +853,70 @@ h1 {
 }
 .hytter-inner {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5em;
     overflow: hidden;
 }
+/* Hytter */
+#hytter-view {
+    width: 100%;
+    height: 100%;
+}
+#granbo {
+    display: none;
+}
+#granhaug {
+    display: none;
+}
+#granstua {
+    display: none;
+}
+#grantoppen {
+    display: none;
+}
 /* Hytter Image */
-.hytter-image-wrapper {
+.hytter-header-outer {
+    width: 100%;
+    position: relative;
+}
+.hytter-header-wrapper {
     margin: 1em 0;
+    width: 100%;
     position: relative;
 }
 #dot1 {
-    left: 22%;
-    top: 46%;
+    left: 23.15%;
+    top: 47%;
 }
 #himage1 {
-    left: 22%;
-    top: 46%;
+    left: 23.15%;
+    top: 47%;
 }
 #dot2 {
-    left: 43%;
-    top: 28%;
+    left: 43.75%;
+    top: 30%;
 }
 #himage2 {
-    left: 43%;
-    top: 28%;
+    left: 43.75%;
+    top: 30%;
 }
 #dot3 {
-    left: 57%;
-    top: 40%;
+    left: 57.75%;
+    top: 41%;
 }
 #himage3 {
-    left: 57%;
-    top: 40%;
+    left: 57.75%;
+    top: 41%;
 }
 #dot4 {
-    left: 69.25%;
-    top: 35.5%;
+    left: 70%;
+    top: 36%;
 }
 #himage4 {
-    left: 69.25%;
-    top: 35.5%;
+    left: 70%;
+    top: 36%;
 }
 .himage {
     width: 12.5em;
@@ -838,7 +929,7 @@ h1 {
     overflow: hidden;
     cursor: pointer;
     opacity: 0;
-    transition: all .3s cubic-bezier(.175,.885,.32,1.275);
+    transition: all .3s cubic-bezier(.175,.885,.32,1.075);
     z-index: 5;
 }
 .himage img {
@@ -852,6 +943,7 @@ h1 {
     height: 1.25em;
     position: absolute;
     border: 1px solid var(--white);
+    transform: translate(-50%, -50%);
     background-color: transparent;
     border-radius: 50%;
     cursor: pointer;
@@ -871,7 +963,8 @@ h1 {
     transition: all .3s cubic-bezier(.175,.885,.32,1.025);
     z-index: 2;
 }
-.hytter-image {
+.hytter-header {
+    width: 100%;
     display: block;
 }
 /* Hytter Left */
@@ -983,51 +1076,6 @@ h1 {
     margin: 0 0 0 1em;
     color: var(--gray-dark);
     font-size: var(--paragraph);
-}
-/* Hytter */
-#hytter-view {
-    width: 100%;
-    height: 100%;
-}
-.hytter-image-view {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2em;
-}
-.hytter-view-wrapper {
-    width: 100%;
-    position: relative;
-    cursor: pointer;
-}
-.hytter-view-inner {
-    width: 100%;
-    height: 15em;
-    position: relative;
-    overflow: hidden;
-}
-.hytter-view-inner img {
-    min-width: 100%;
-    min-height: 100%;
-    position: absolute;
-    object-fit: cover;
-}
-.hytter-view-title {
-    margin: 0;
-    font-size: calc(var(--heading) - 1rem);
-    font-weight: 900;
-}
-#granbo {
-    display: none;
-}
-#granhaug {
-    display: none;
-}
-#granstua {
-    display: none;
-}
-#grantoppen {
-    display: none;
 }
 /*
 =-=-=-=-=-=-=-=-=-=-=-=-=

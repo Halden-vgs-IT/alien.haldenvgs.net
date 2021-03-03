@@ -1,3 +1,35 @@
+// Header Video
+let playerButton = document.getElementsByClassName("player-button-wrapper");
+let playerWrapper = document.getElementsByClassName("player-wrapper");
+let playerBackground = document.getElementsByClassName("player-background");
+
+let video = document.querySelector("#hytter-video-player");
+video.volume = 0;
+
+playerButton[0].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    playerWrapper[0].style.opacity = "1";
+    playerWrapper[0].style.pointerEvents = "auto";
+
+    // Video playing with timeout
+    video.autoplay = true;
+    video.load();
+
+});
+
+playerBackground[0].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    playerWrapper[0].style.opacity = "0";
+    playerWrapper[0].style.pointerEvents = "none";
+
+});
+
+
+
 // Hytter
 let hytter = [
     "hytte1",
@@ -54,7 +86,7 @@ himage1.addEventListener("mouseover", function() {
     himage1.style.opacity = "1";
     himage1.style.pointerEvents = "auto";
     himage1.style.transform = "translate(-50%, -50%) scale(1, 1)";
-    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .65)";
 });
 himage1.addEventListener("mouseout", function() {
     himage1.style.opacity = "0";
@@ -67,7 +99,7 @@ dot2.addEventListener("mouseover", function() {
     himage2.style.opacity = "1";
     himage2.style.pointerEvents = "auto";
     himage2.style.transform = "translate(-50%, -50%) scale(1, 1)";
-    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .65)";
 });
 dot2.addEventListener("mouseout", function() {
     himage2.style.opacity = "0";
@@ -79,7 +111,7 @@ himage2.addEventListener("mouseover", function() {
     himage2.style.opacity = "1";
     himage2.style.pointerEvents = "auto";
     himage2.style.transform = "translate(-50%, -50%) scale(1, 1)";
-    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .65)";
 });
 himage2.addEventListener("mouseout", function() {
     himage2.style.opacity = "0";
@@ -92,7 +124,7 @@ dot3.addEventListener("mouseover", function() {
     himage3.style.opacity = "1";
     himage3.style.pointerEvents = "auto";
     himage3.style.transform = "translate(-50%, -50%) scale(1, 1)";
-    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .65)";
 });
 dot3.addEventListener("mouseout", function() {
     himage3.style.opacity = "0";
@@ -104,7 +136,7 @@ himage3.addEventListener("mouseover", function() {
     himage3.style.opacity = "1";
     himage3.style.pointerEvents = "auto";
     himage3.style.transform = "translate(-50%, -50%) scale(1, 1)";
-    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .65)";
 });
 himage3.addEventListener("mouseout", function() {
     himage3.style.opacity = "0";
@@ -117,7 +149,7 @@ dot4.addEventListener("mouseover", function() {
     himage4.style.opacity = "1";
     himage4.style.pointerEvents = "auto";
     himage4.style.transform = "translate(-50%, -50%) scale(1, 1)";
-    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .65)";
 });
 dot4.addEventListener("mouseout", function() {
     himage4.style.opacity = "0";
@@ -129,7 +161,7 @@ himage4.addEventListener("mouseover", function() {
     himage4.style.opacity = "1";
     himage4.style.pointerEvents = "auto";
     himage4.style.transform = "translate(-50%, -50%) scale(1, 1)";
-    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .65)";
 });
 himage4.addEventListener("mouseout", function() {
     himage4.style.opacity = "0";
@@ -153,6 +185,13 @@ granboView.addEventListener('click', function(event) {
 
     event.preventDefault();
 
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
     hytterView.style.display = "none";
     granbo.style.display = "grid";
 
@@ -161,6 +200,13 @@ granhaugView.addEventListener('click', function(event) {
 
     event.preventDefault();
 
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
     hytterView.style.display = "none";
     granhaug.style.display = "grid";
 
@@ -169,6 +215,13 @@ granstuaView.addEventListener('click', function(event) {
 
     event.preventDefault();
 
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
     hytterView.style.display = "none";
     granstua.style.display = "grid";
 
@@ -177,6 +230,13 @@ grantoppenView.addEventListener('click', function(event) {
 
     event.preventDefault();
 
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
     hytterView.style.display = "none";
     grantoppen.style.display = "grid";
 

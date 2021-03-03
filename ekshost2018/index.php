@@ -360,73 +360,61 @@
                 </div>
             </div>
 
-            <div class="flexbox">
-
-                <div class="hytter-image-wrapper">
-                    <div id="dot1" class="hytter-dot flexbox">
-                        <div class="hytter-dot-inner"></div>
-                    </div>
-                    <div id="dot2" class="hytter-dot flexbox">
-                        <div class="hytter-dot-inner"></div>
-                    </div>
-                    <div id="dot3" class="hytter-dot flexbox">
-                        <div class="hytter-dot-inner"></div>
-                    </div>
-                    <div id="dot4" class="hytter-dot flexbox">
-                        <div class="hytter-dot-inner"></div>
-                    </div>
-                    <div id="himage1" class="himage flexbox">
-                        <img src="images/grantoppen.jpg" alt="">
-                    </div>
-                    <div id="himage2" class="himage flexbox">
-                        <img src="images/granbo.jpg" alt="">
-                    </div>
-                    <div id="himage3" class="himage flexbox">
-                        <img src="images/granstua.jpg" alt="">
-                    </div>
-                    <div id="himage4" class="himage flexbox">
-                        <img src="images/granhaug.jpg" alt="">
-                    </div>
-                    <div class="hytter-overlay"></div>
-                    <img class="hytter-image" src="images/menybilde.jpg" alt="">
-                </div>
-
-            </div>
-
             <div id="hytter-view" class="flexbox-col">
 
-                <div class="hytter-video-wrapper">
-                    <div class="video-overlay"></div>
-                    <video id="hytter-video" loop autoplay preload="auto">
-                        <source src="videos/hyttefelt.m4v" type="video/mp4">
-                    </video>
+                <div class="player-wrapper flexbox">
+                    <div class="player">
+                        <video id="hytter-video-player" preload="auto">
+                            <source src="videos/hyttefelt.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="player-background"></div>
                 </div>
 
-                <div class="hytter-image-view">
-                    <div id="granbo-view" class="hytter-view-wrapper flexbox-col-left">
-                        <div class="hytter-view-inner">
-                            <img src="images/granbo.jpg" alt="">
-                        </div>
-                        <h3 class="hytter-view-title">Granbo</h3>
+                <div class="hytter-video-wrapper flexbox">
+                    <div class="player-button-wrapper">
+                        <a class='play-but'>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="213.7px" height="213.7px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
+                                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1 "/>
+                                <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
+                            </svg>
+                        </a>
                     </div>
-                    <div id="granhaug-view" class="hytter-view-wrapper flexbox-col-left">
-                        <div class="hytter-view-inner">
-                            <img src="images/granhaug.jpg" alt="">
+                    <div class="video-overlay"></div>
+                    <img id="hytter-video" src="images/hytter-video.jpg" alt="">
+                </div>
+
+                <div class="hytter-header-outer flexbox">
+
+                    <div class="hytter-header-wrapper">
+                        <div id="dot1" class="hytter-dot flexbox">
+                            <div class="hytter-dot-inner"></div>
                         </div>
-                        <h3 class="hytter-view-title">Granhaug</h3>
-                    </div>
-                    <div id="granstua-view" class="hytter-view-wrapper flexbox-col-left">
-                        <div class="hytter-view-inner">
-                            <img src="images/granstua.jpg" alt="">
+                        <div id="dot2" class="hytter-dot flexbox">
+                            <div class="hytter-dot-inner"></div>
                         </div>
-                        <h3 class="hytter-view-title">Granstua</h3>
-                    </div>
-                    <div id="grantoppen-view" class="hytter-view-wrapper flexbox-col-left">
-                        <div class="hytter-view-inner">
-                            <img src="images/grantoppen.jpg" alt="">
+                        <div id="dot3" class="hytter-dot flexbox">
+                            <div class="hytter-dot-inner"></div>
                         </div>
-                        <h3 class="hytter-view-title">Grantoppen</h3>
+                        <div id="dot4" class="hytter-dot flexbox">
+                            <div class="hytter-dot-inner"></div>
+                        </div>
+                        <div id="himage1" class="himage flexbox">
+                            <img id="grantoppen-view" src="images/grantoppen.jpg" alt="">
+                        </div>
+                        <div id="himage2" class="himage flexbox">
+                            <img id="granbo-view" src="images/granbo.jpg" alt="">
+                        </div>
+                        <div id="himage3" class="himage flexbox">
+                            <img id="granstua-view" src="images/granstua.jpg" alt="">
+                        </div>
+                        <div id="himage4" class="himage flexbox">
+                            <img id="granhaug-view" src="images/granhaug.jpg" alt="">
+                        </div>
+                        <div class="hytter-overlay"></div>
+                        <img class="hytter-header" src="images/menybilde.jpg" alt="">
                     </div>
+
                 </div>
 
             </div>
@@ -837,6 +825,25 @@
 
     </main>
 
+    <!-- #footer -->
+    <footer id="footer" class="flexbox">
+
+        <!-- Footer Inner -->
+        <div class="footer-inner">
+
+            <!-- Footer Left -->
+            <div class="footer-left flexbox-col-left">
+                <h3>snowstyle.</h3>
+                <p>Made with ♡ by Areal Alien</p>
+            </div>
+
+            <!-- Footer Right -->
+            <div class="footer-right"></div>
+
+        </div>
+
+    </footer>
+
 </div>
 
 <!-- Hytter -->
@@ -893,11 +900,5 @@
 
     // Accepts any class name
     var rellax = new Rellax('.rellax');
-
-    // Video playing with timeout
-    let vid = document.querySelector("#hytter-video");
-    vid.autoplay = true;
-    vid.volume = 0;
-    vid.load();
 </script>
 </html>
