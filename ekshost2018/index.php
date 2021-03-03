@@ -900,7 +900,7 @@
                         <div class="p-price flexbox-space">
                             <div class="flexbox-col-left">
                                 <p class="p-sub">Pris</p>
-                                <p class="p-main"><span id="price-pay-text"></span>kr</p>
+                                <p class="p-main"><span id="price-pay-text"></span>kr <span class="discount">16.67</span></p>
                             </div>
                             <div class="flexbox-col-right">
                                 <p class="p-sub">&nbsp</p>

@@ -147,6 +147,16 @@ purchaseLink[0].addEventListener('click', function(event) {
     dateText.innerHTML = date.getDate() + ' ' + months[date.getMonth()] + ', ' + date.getFullYear();
     timeText.innerHTML = hour + ':' + minute;
 
+    if (slider.value == 6) {
+        discount[2].style.display = "inline-block";
+        discount[2].innerHTML =  "16.67%";
+    } else if (slider.value == 7) {
+        discount[2].style.display = "inline-block";
+        discount[2].innerHTML =  "28.57%";
+    } else {
+        discount[2].innerHTML =  "";
+    }
+
     setTimeout(function() {
         pageHome.style.display = "block";
         pageHeiskort.style.display = "none";
