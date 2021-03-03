@@ -129,10 +129,23 @@ purchaseLink[0].addEventListener('click', function(event) {
     let ageFinalText = document.getElementById("age-final-text");
     let daysFinalText = document.getElementById("days-final-text");
     let payPriceText = document.getElementById("price-pay-text");
+    let dateText = document.getElementById("date-text");
+    let timeText = document.getElementById("time-text")
+
+    let date = new Date();
+    let months = ["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"];
+
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+
+    if (hour.toString().length === 1) { hour = '0' + hour; }
+    if (minute.toString().length === 1) { minute = '0' + minute; }
 
     ageFinalText.innerHTML = ageFinal.innerHTML;
     daysFinalText.innerHTML = days.innerHTML;
     payPriceText.innerHTML = price.innerHTML;
+    dateText.innerHTML = date.getDate() + ' ' + months[date.getMonth()] + ', ' + date.getFullYear();
+    timeText.innerHTML = hour + ':' + minute;
 
     setTimeout(function() {
         pageHome.style.display = "block";
@@ -161,7 +174,7 @@ purchaseLink[0].addEventListener('click', function(event) {
             "%, #eaeefb " +
             "0" +
             "%, #eaeefb 100%)";
-    }, 2500);
+    }, 250000);
 
 });
 

@@ -856,30 +856,57 @@
         <div class="purchase-box flexbox-col">
 
             <!-- Purchase Box Inner -->
-            <div class="flexbox-col">
+            <div class="p-box-inner flexbox-col">
+
+                <p class="check flexbox">
+                    <span class="circ flexbox"><i class="uil uil-check"></i></span>
+                </p>
 
                 <!-- Purchase Box Left -->
                 <div class="purchase-left">
 
-                    <p class="check flexbox">
-                        <span class="circ flexbox"><i class="uil uil-check"></i></span>
-                        <span class="dash dash1"></span>
-                        <span class="dash dash2"></span>
-                        <span class="dash dash3"></span>
-                    </p>
+                    <div class="purchase-page-logo flexbox-col">
+                        <h3>Tusen takk!</h3>
+                        <p class="purchase-gray">bestillingen din var vellykket!</p>
+                    </div>
 
                 </div>
 
                 <!-- Purchase Box Right -->
                 <div class="purchase-right flexbox-col">
 
-                    <p class="purchase-gray">Takk for bestillingen!</p>
-
                     <div class="purchase-title flexbox-col-left">
-                        <h3>Heiskort</h3>
-                        <p id="age-final-text"></p>
-                        <p><span id="days-final-text"></span> dager</p>
-                        <p><span id="price-pay-text"></span>kr</p>
+                        <div class="p-title flexbox-col-left">
+                            <h3>Heiskort</h3>
+                        </div>
+                        <div class="p-date flexbox-space">
+                            <div class="flexbox-col-left">
+                                <p class="p-sub">Dato</p>
+                                <p id="date-text" class="p-main"></p>
+                            </div>
+                            <div class="flexbox-col-right">
+                                <p class="p-sub">Tid</p>
+                                <p id="time-text" class="p-main"></p>
+                            </div>
+                        </div>
+                        <div class="p-age flexbox-col-left">
+                            <p class="p-sub">Type</p>
+                            <p id="age-final-text" class="p-main"></p>
+                        </div>
+                        <div class="p-days flexbox-col-left">
+                            <p class="p-sub">Antall dager</p>
+                            <p class="p-main"><span id="days-final-text"></span> dager</p>
+                        </div>
+                        <div class="p-price flexbox-space">
+                            <div class="flexbox-col-left">
+                                <p class="p-sub">Pris</p>
+                                <p class="p-main"><span id="price-pay-text"></span>kr</p>
+                            </div>
+                            <div class="flexbox-col-right">
+                                <p class="p-sub">&nbsp</p>
+                                <p class="p-main"><span class="p-comp">Betalt</span></p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
