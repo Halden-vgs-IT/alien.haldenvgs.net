@@ -193,11 +193,11 @@
 
                 <!-- Card Image -->
                 <div class="card-image-wrapper flexbox">
-                    <img id="card-image-heiskort" src="https://images.unsplash.com/photo-1548873902-8b69fb85030a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80" alt="">
+                    <img id="card-image-heiskort" src="https://images.unsplash.com/photo-1550627951-de9fcc886857?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80" alt="">
                 </div>
 
                 <!-- Card Glow -->
-                <img class="card-glow" src="https://images.unsplash.com/photo-1548873902-8b69fb85030a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80" alt="">
+                <img class="card-glow" src="https://images.unsplash.com/photo-1550627951-de9fcc886857?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80" alt="">
 
             </div>
 
@@ -209,11 +209,11 @@
 
                 <!-- Card Image -->
                 <div class="card-image-wrapper flexbox">
-                    <img id="card-image-hytter" src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2134&q=80" alt="">
+                    <img id="card-image-hytter" src="https://images.unsplash.com/photo-1505322491781-b5b70b3f370c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80" alt="">
                 </div>
 
                 <!-- Card Glow -->
-                <img class="card-glow" src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2134&q=80" alt="">
+                <img class="card-glow" src="https://images.unsplash.com/photo-1505322491781-b5b70b3f370c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80" alt="">
 
             </div>
 
