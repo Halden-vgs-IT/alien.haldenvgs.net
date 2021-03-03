@@ -360,6 +360,39 @@
                 </div>
             </div>
 
+            <div class="flexbox">
+
+                <div class="hytter-image-wrapper">
+                    <div id="dot1" class="hytter-dot flexbox">
+                        <div class="hytter-dot-inner"></div>
+                    </div>
+                    <div id="dot2" class="hytter-dot flexbox">
+                        <div class="hytter-dot-inner"></div>
+                    </div>
+                    <div id="dot3" class="hytter-dot flexbox">
+                        <div class="hytter-dot-inner"></div>
+                    </div>
+                    <div id="dot4" class="hytter-dot flexbox">
+                        <div class="hytter-dot-inner"></div>
+                    </div>
+                    <div id="himage1" class="himage flexbox">
+                        <img src="images/grantoppen.jpg" alt="">
+                    </div>
+                    <div id="himage2" class="himage flexbox">
+                        <img src="images/granbo.jpg" alt="">
+                    </div>
+                    <div id="himage3" class="himage flexbox">
+                        <img src="images/granstua.jpg" alt="">
+                    </div>
+                    <div id="himage4" class="himage flexbox">
+                        <img src="images/granhaug.jpg" alt="">
+                    </div>
+                    <div class="hytter-overlay"></div>
+                    <img class="hytter-image" src="images/menybilde.jpg" alt="">
+                </div>
+
+            </div>
+
             <div id="hytter-view" class="flexbox-col">
 
                 <div class="hytter-video-wrapper">

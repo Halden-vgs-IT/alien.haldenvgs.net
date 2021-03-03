@@ -26,6 +26,117 @@ let vinter = [
     "false"
 ]
 
+let dot1 = document.getElementById("dot1");
+let dot2 = document.getElementById("dot2");
+let dot3 = document.getElementById("dot3");
+let dot4 = document.getElementById("dot4");
+
+let himage1 = document.getElementById("himage1");
+let himage2 = document.getElementById("himage2");
+let himage3 = document.getElementById("himage3");
+let himage4 = document.getElementById("himage4");
+
+let hytterOverlay = document.getElementsByClassName("hytter-overlay");
+
+dot1.addEventListener("mouseover", function() {
+    himage1.style.opacity = "1";
+    himage1.style.pointerEvents = "auto";
+    himage1.style.transform = "translate(-50%, -50%) scale(1, 1)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+});
+dot1.addEventListener("mouseout", function() {
+    himage1.style.opacity = "0";
+    himage1.style.pointerEvents = "none";
+    himage1.style.transform = "translate(-50%, -50%) scale(0, 0)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .25)";
+});
+himage1.addEventListener("mouseover", function() {
+    himage1.style.opacity = "1";
+    himage1.style.pointerEvents = "auto";
+    himage1.style.transform = "translate(-50%, -50%) scale(1, 1)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+});
+himage1.addEventListener("mouseout", function() {
+    himage1.style.opacity = "0";
+    himage1.style.pointerEvents = "none";
+    himage1.style.transform = "translate(-50%, -50%) scale(0, 0)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .25)";
+});
+
+dot2.addEventListener("mouseover", function() {
+    himage2.style.opacity = "1";
+    himage2.style.pointerEvents = "auto";
+    himage2.style.transform = "translate(-50%, -50%) scale(1, 1)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+});
+dot2.addEventListener("mouseout", function() {
+    himage2.style.opacity = "0";
+    himage2.style.pointerEvents = "none";
+    himage2.style.transform = "translate(-50%, -50%) scale(0, 0)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .25)";
+});
+himage2.addEventListener("mouseover", function() {
+    himage2.style.opacity = "1";
+    himage2.style.pointerEvents = "auto";
+    himage2.style.transform = "translate(-50%, -50%) scale(1, 1)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+});
+himage2.addEventListener("mouseout", function() {
+    himage2.style.opacity = "0";
+    himage2.style.pointerEvents = "none";
+    himage2.style.transform = "translate(-50%, -50%) scale(0, 0)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .25)";
+});
+
+dot3.addEventListener("mouseover", function() {
+    himage3.style.opacity = "1";
+    himage3.style.pointerEvents = "auto";
+    himage3.style.transform = "translate(-50%, -50%) scale(1, 1)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+});
+dot3.addEventListener("mouseout", function() {
+    himage3.style.opacity = "0";
+    himage3.style.pointerEvents = "none";
+    himage3.style.transform = "translate(-50%, -50%) scale(0, 0)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .25)";
+});
+himage3.addEventListener("mouseover", function() {
+    himage3.style.opacity = "1";
+    himage3.style.pointerEvents = "auto";
+    himage3.style.transform = "translate(-50%, -50%) scale(1, 1)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+});
+himage3.addEventListener("mouseout", function() {
+    himage3.style.opacity = "0";
+    himage3.style.pointerEvents = "none";
+    himage3.style.transform = "translate(-50%, -50%) scale(0, 0)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .25)";
+});
+
+dot4.addEventListener("mouseover", function() {
+    himage4.style.opacity = "1";
+    himage4.style.pointerEvents = "auto";
+    himage4.style.transform = "translate(-50%, -50%) scale(1, 1)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+});
+dot4.addEventListener("mouseout", function() {
+    himage4.style.opacity = "0";
+    himage4.style.pointerEvents = "none";
+    himage4.style.transform = "translate(-50%, -50%) scale(0, 0)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .25)";
+});
+himage4.addEventListener("mouseover", function() {
+    himage4.style.opacity = "1";
+    himage4.style.pointerEvents = "auto";
+    himage4.style.transform = "translate(-50%, -50%) scale(1, 1)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .5)";
+});
+himage4.addEventListener("mouseout", function() {
+    himage4.style.opacity = "0";
+    himage4.style.pointerEvents = "none";
+    himage4.style.transform = "translate(-50%, -50%) scale(0, 0)";
+    hytterOverlay[0].style.backgroundColor = "rgba(0, 0, 0, .25)";
+});
 
 // Granbo
 let hytterView = document.getElementById("hytter-view");
