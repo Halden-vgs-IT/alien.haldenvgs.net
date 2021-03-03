@@ -27,6 +27,13 @@ barn.addEventListener('click', function(event) {
 
     event.preventDefault();
 
+    price.innerHTML = "100";
+    priceFinal.innerHTML = "100";
+    prices = [100, 200, 300, 400, 500, 500, 500];
+
+    disc1.innerHTML = "&nbsp600kr&nbsp";
+    disc2.innerHTML = "&nbsp700kr&nbsp";
+
     pageBottom[0].style.display = "block";
     voksenButton.style.opacity = ".5";
     voksenButton.style.border = "1px solid var(--bc-gray)";
@@ -36,10 +43,34 @@ barn.addEventListener('click', function(event) {
 
     ageFinal.innerHTML = "Barn";
 
+    // Fix Slider
+    slider.value = 1;
+    price.innerHTML = Number(prices[0]).toFixed(0);
+    priceFinal.innerHTML = Number(prices[0]).toFixed(0);
+    days.innerHTML = "1";
+    daysFinal.innerHTML = "1";
+    discount[0].style.display = "none";
+    discount[1].style.display = "none";
+    disc1.style.display = "none";
+    disc2.style.display = "none";
+    slider.style.background =
+        "linear-gradient(to right, #41A0FF 0%, #41A0FF " +
+        "0" +
+        "%, #eaeefb " +
+        "0" +
+        "%, #eaeefb 100%)";
+
 });
 voksen.addEventListener('click', function(event) {
 
     event.preventDefault();
+
+    price.innerHTML = "200";
+    priceFinal.innerHTML = "200";
+    prices = [200, 400, 600, 800, 1000, 1000, 1000];
+
+    disc1.innerHTML = "&nbsp1200kr&nbsp";
+    disc2.innerHTML = "&nbsp1400kr&nbsp";
 
     pageBottom[0].style.display = "block";
     barnButton.style.opacity = ".5";
@@ -49,6 +80,23 @@ voksen.addEventListener('click', function(event) {
     voksenButton.style.borderRadius = "4px";
 
     ageFinal.innerHTML = "Voksen";
+
+    // Fix Slider
+    slider.value = 1;
+    price.innerHTML = Number(prices[0]).toFixed(0);
+    priceFinal.innerHTML = Number(prices[0]).toFixed(0);
+    days.innerHTML = "1";
+    daysFinal.innerHTML = "1";
+    discount[0].style.display = "none";
+    discount[1].style.display = "none";
+    disc1.style.display = "none";
+    disc2.style.display = "none";
+    slider.style.background =
+        "linear-gradient(to right, #41A0FF 0%, #41A0FF " +
+        "0" +
+        "%, #eaeefb " +
+        "0" +
+        "%, #eaeefb 100%)";
 
 });
 
@@ -111,7 +159,7 @@ let listener = function () {
                 days.innerHTML = "6";
                 daysFinal.innerHTML = "6";
                 discount[0].style.display = "inline-block";
-                discount[0].innerHTML = "16.67% rabatt";
+                discount[0].innerHTML =  "16.67% rabatt";
                 discount[1].style.display = "inline-block";
                 discount[1].innerHTML = "16.67%";
                 disc1.style.display = "block";

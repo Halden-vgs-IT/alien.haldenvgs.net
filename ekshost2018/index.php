@@ -877,7 +877,7 @@
 
                     <div class="purchase-title flexbox-col-left">
                         <h3>Heiskort</h3>
-                        <p>Voksen</p>
+                        <p id="age-final-text"></p>
                         <p><span id="days-final-text"></span> dager</p>
                         <p><span id="price-pay-text"></span>kr</p>
                     </div>

@@ -126,9 +126,11 @@ purchaseLink[0].addEventListener('click', function(event) {
     pagePurchase.style.display = "block";
 
     // Output payment details
+    let ageFinalText = document.getElementById("age-final-text");
     let daysFinalText = document.getElementById("days-final-text");
     let payPriceText = document.getElementById("price-pay-text");
 
+    ageFinalText.innerHTML = ageFinal.innerHTML;
     daysFinalText.innerHTML = days.innerHTML;
     payPriceText.innerHTML = price.innerHTML;
 
