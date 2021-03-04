@@ -364,7 +364,7 @@
 
                 <div class="player-wrapper flexbox">
                     <div class="player">
-                        <video id="hytter-video-player" preload="auto">
+                        <video id="hytter-video-player" controls preload="auto">
                             <source src="videos/hyttefelt.m4v" type="video/mp4">
                         </video>
                     </div>

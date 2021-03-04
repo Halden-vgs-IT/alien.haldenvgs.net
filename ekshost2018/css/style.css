@@ -1190,7 +1190,7 @@ h1 {
     opacity: 0;
 }
 .loader {
-    width: 2.75em;
+    width: 2.5em;
 }
 .circular {
     animation: rotate 2s linear infinite;
@@ -1216,14 +1216,14 @@ h1 {
 }
 @keyframes checkmark {
     0% { opacity: 0; }
-    60% { opacity: 0; }
-    66% { opacity: 1; }
+    50% { opacity: 0; }
+    56% { opacity: 1; }
     100% { opacity: 1; }
 }
 @keyframes loader {
     0% { opacity: 1; }
-    56% { opacity: 1; }
-    62% { opacity: 0; }
+    46% { opacity: 1; }
+    52% { opacity: 0; }
     100% { opacity: 0; }
 }
 /* Footer */
