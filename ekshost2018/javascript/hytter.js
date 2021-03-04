@@ -30,42 +30,74 @@ playerBackground[0].addEventListener('click', function(event) {
 
 });
 
-
-
 // Hytter
 let hytter = [
-    "hytte1",
-    "hytte2",
-    "hytte3"
-]
+    {
+        hytte: "grantoppen",
+        sengeplasser: 8,
+        standard: "Lav",
+        badstue: "Nei",
+        ukepris: 16000,
+        status: "ledig",
+        utleid: {
+            jul: false,
+            vinter: false,
+            paske: false
+        }
+    },
+    {
+        hytte: "granbo",
+        sengeplasser: 6,
+        standard: "Middels",
+        badstue: "Nei",
+        ukepris: 15000,
+        utleid: {
+            jul: false,
+            vinter: false,
+            paske: false
+        }
+    },
+    {
+        hytte: "granstua",
+        sengeplasser: 4,
+        standard: "Høy",
+        badstue: "Ja",
+        ukepris: 12000,
+        utleid: {
+            jul: false,
+            vinter: false,
+            paske: false
+        }
+    },
+    {
+        hytte: "granhaug",
+        sengeplasser: 10,
+        standard: "Høy",
+        badstue: "Ja",
+        ukepris: 30000,
+        utleid: {
+            jul: false,
+            vinter: false,
+            paske: false
+        }
+    }
+];
 
-// Jul
-let jul = [
-    "false",
-    "false",
-    "false"
-]
+console.log(hytter.find(element => element.hytte === "grantoppen"));
+console.log(hytter.find(element => element.hytte === "granhaug"));
+console.log(hytter.find(element => element.hytte === "granbo"));
+console.log(hytter.find(element => element.hytte === "granstua"));
+console.log(hytter[0]["hytte"] + " har " + hytter[0]["sengeplasser"] + " sengeplasser");
+console.log(hytter[0]["utleid"]["jul"]);
 
-// Påske
-let paske = [
-    "false",
-    "false",
-    "false"
-]
+let hytterTitle = document.getElementsByClassName("hytter-title");
 
-// Vinterferie
-let vinter = [
-    "false",
-    "false",
-    "false"
-]
+// Set title of hytte pages
+hytterTitle[0].innerHTML = hytter[0]["hytte"];
+hytterTitle[1].innerHTML = hytter[1]["hytte"];
+hytterTitle[2].innerHTML = hytter[2]["hytte"];
+hytterTitle[3].innerHTML = hytter[3]["hytte"];
 
-let hyttePrices = [
-    12000,
-    15000,
-    16000,
-    30000
-]
 
 let dot1 = document.getElementById("dot1");
 let dot2 = document.getElementById("dot2");
@@ -181,15 +213,30 @@ himage4.addEventListener("mouseout", function() {
 
 // Granbo
 let hytterView = document.getElementById("hytter-view");
-let granboView = document.getElementById("granbo-view");
-let granbo = document.getElementById("granbo");
-let granhaugView = document.getElementById("granhaug-view");
-let granhaug = document.getElementById("granhaug");
-let granstuaView = document.getElementById("granstua-view");
-let granstua = document.getElementById("granstua");
 let grantoppenView = document.getElementById("grantoppen-view");
 let grantoppen = document.getElementById("grantoppen");
+let granboView = document.getElementById("granbo-view");
+let granbo = document.getElementById("granbo");
+let granstuaView = document.getElementById("granstua-view");
+let granstua = document.getElementById("granstua");
+let granhaugView = document.getElementById("granhaug-view");
+let granhaug = document.getElementById("granhaug");
 
+grantoppenView.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    hytterView.style.display = "none";
+    grantoppen.style.display = "grid";
+
+});
 granboView.addEventListener('click', function(event) {
 
     event.preventDefault();
@@ -203,21 +250,6 @@ granboView.addEventListener('click', function(event) {
     // Pages
     hytterView.style.display = "none";
     granbo.style.display = "grid";
-
-});
-granhaugView.addEventListener('click', function(event) {
-
-    event.preventDefault();
-
-    // Scroll to top
-    window.scrollTo({
-        top: 0,
-        behavior: 'auto'
-    });
-
-    // Pages
-    hytterView.style.display = "none";
-    granhaug.style.display = "grid";
 
 });
 granstuaView.addEventListener('click', function(event) {
@@ -235,7 +267,7 @@ granstuaView.addEventListener('click', function(event) {
     granstua.style.display = "grid";
 
 });
-grantoppenView.addEventListener('click', function(event) {
+granhaugView.addEventListener('click', function(event) {
 
     event.preventDefault();
 
@@ -247,7 +279,7 @@ grantoppenView.addEventListener('click', function(event) {
 
     // Pages
     hytterView.style.display = "none";
-    grantoppen.style.display = "grid";
+    granhaug.style.display = "grid";
 
 });
 
@@ -258,7 +290,7 @@ let granbo2 = document.getElementById("granbo2");
 let granbo3 = document.getElementById("granbo3");
 let granbo4 = document.getElementById("granbo4");
 
-hytterLeftImage[0].addEventListener('click', function(event) {
+hytterLeftImage[5].addEventListener('click', function(event) {
 
     event.preventDefault();
 
@@ -268,7 +300,7 @@ hytterLeftImage[0].addEventListener('click', function(event) {
     granbo4.style.display = "none";
 
 });
-hytterLeftImage[1].addEventListener('click', function(event) {
+hytterLeftImage[6].addEventListener('click', function(event) {
 
     event.preventDefault();
 
@@ -278,7 +310,7 @@ hytterLeftImage[1].addEventListener('click', function(event) {
     granbo4.style.display = "none";
 
 });
-hytterLeftImage[2].addEventListener('click', function(event) {
+hytterLeftImage[7].addEventListener('click', function(event) {
 
     event.preventDefault();
 
@@ -288,7 +320,7 @@ hytterLeftImage[2].addEventListener('click', function(event) {
     granbo4.style.display = "none";
 
 });
-hytterLeftImage[3].addEventListener('click', function(event) {
+hytterLeftImage[8].addEventListener('click', function(event) {
 
     event.preventDefault();
 

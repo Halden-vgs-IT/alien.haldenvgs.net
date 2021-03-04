@@ -223,7 +223,7 @@ purchaseLink[0].addEventListener('click', function(event) {
 
 });
 // Purchase Link 2
-purchaseLink[1].addEventListener('click', function(event) {
+purchaseLink[2].addEventListener('click', function(event) {
 
     event.preventDefault();
 
@@ -240,7 +240,7 @@ purchaseLink[1].addEventListener('click', function(event) {
     pagePurchase.style.display = "block";
 
     let pType = document.getElementsByClassName("p-type");
-    pType[0].innerHTML = "Hytte";
+    pType[0].innerHTML = "Granbo Hytte";
 
     let dateText = document.getElementsByClassName("date-text");
     let timeText = document.getElementsByClassName("time-text");
