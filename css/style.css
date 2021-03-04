@@ -408,6 +408,7 @@ h1 {
     transition: opacity .25s ease-in-out;
 }
 /* Main */
+/* projects */
 .projects {
     width: 80%;
     display: grid;

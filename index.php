@@ -135,7 +135,15 @@
 <!-- #Main -->
 <main class="flexbox-col">
 
-
+    <div class="projects">
+        <a cursor-class="arrow" href="ekshost2018/index.php">
+            <div class="project flexbox">
+                <h1>Ekshost2018</h1>
+                <div class="overlay"></div>
+                <img class="project-image" src="images/ekshost2018.jpg" alt="">
+            </div>
+        </a>
+    </div>
 
 </main>
 </body>

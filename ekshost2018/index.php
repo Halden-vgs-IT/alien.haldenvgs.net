@@ -65,7 +65,7 @@
         <nav id="navbar" class="flexbox">
             <div class="navbar-inner">
                 <div class="navbar-left">
-                    <h3>snowstyle.</h3>
+                    <h3>snøfjell.</h3>
                 </div>
                 <div class="navbar-space"></div>
                 <div class="navbar-right flexbox-space">
@@ -229,7 +229,7 @@
 
             <!-- Footer Left -->
             <div class="footer-left flexbox-col-left">
-                <h3>snowstyle.</h3>
+                <h3>snøfjell.</h3>
                 <p>Made with ♡ by Areal Alien</p>
             </div>
 
@@ -833,7 +833,7 @@
 
             <!-- Footer Left -->
             <div class="footer-left flexbox-col-left">
-                <h3>snowstyle.</h3>
+                <h3>snøfjell.</h3>
                 <p>Made with ♡ by Areal Alien</p>
             </div>
 

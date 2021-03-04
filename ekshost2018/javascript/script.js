@@ -184,7 +184,7 @@ purchaseLink[0].addEventListener('click', function(event) {
             "%, #eaeefb " +
             "0" +
             "%, #eaeefb 100%)";
-    }, 250000);
+    }, 300000);
 
 });
 
