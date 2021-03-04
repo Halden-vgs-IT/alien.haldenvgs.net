@@ -858,9 +858,16 @@
             <!-- Purchase Box Inner -->
             <div class="p-box-inner flexbox-col">
 
-                <p class="check flexbox">
-                    <span class="circ flexbox"><i class="uil uil-check"></i></span>
-                </p>
+                <div class="check flexbox">
+                    <div id="loader" class="user-loader flexbox">
+                        <div class="loader flexbox">
+                            <svg class="circular" viewBox="25 25 50 50">
+                                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="circ flexbox"><i id="checkmark" class="uil uil-check"></i></span>
+                </div>
 
                 <!-- Purchase Box Left -->
                 <div class="purchase-left">

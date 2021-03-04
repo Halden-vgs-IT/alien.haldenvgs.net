@@ -157,6 +157,12 @@ purchaseLink[0].addEventListener('click', function(event) {
         discount[2].innerHTML =  "";
     }
 
+    let loader = document.getElementById("loader");
+    let checkmark = document.getElementById("checkmark");
+
+    loader.style.animation = "loader 5s ease-in-out forwards";
+    checkmark.style.animation = "checkmark 5s ease-in-out forwards";
+
     setTimeout(function() {
         pageHome.style.display = "block";
         pageHeiskort.style.display = "none";
@@ -184,7 +190,10 @@ purchaseLink[0].addEventListener('click', function(event) {
             "%, #eaeefb " +
             "0" +
             "%, #eaeefb 100%)";
-    }, 300000);
+
+        loader.style.animation = "none";
+        checkmark.style.animation = "none";
+    }, 7500);
 
 });
 
