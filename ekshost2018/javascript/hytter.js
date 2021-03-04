@@ -26,6 +26,8 @@ playerBackground[0].addEventListener('click', function(event) {
     playerWrapper[0].style.opacity = "0";
     playerWrapper[0].style.pointerEvents = "none";
 
+    video.pause();
+
 });
 
 
@@ -56,6 +58,13 @@ let vinter = [
     "false",
     "false",
     "false"
+]
+
+let hyttePrices = [
+    12000,
+    15000,
+    16000,
+    30000
 ]
 
 let dot1 = document.getElementById("dot1");
@@ -287,5 +296,52 @@ hytterLeftImage[3].addEventListener('click', function(event) {
     granbo2.style.display = "none";
     granbo3.style.display = "none";
     granbo4.style.display = "block";
+
+});
+
+// Granstua
+let granstua1 = document.getElementById("granstua1");
+let granstua2 = document.getElementById("granstua2");
+let granstua3 = document.getElementById("granstua3");
+let granstua4 = document.getElementById("granstua4");
+
+hytterLeftImage[10].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    granstua1.style.display = "block";
+    granstua2.style.display = "none";
+    granstua3.style.display = "none";
+    granstua4.style.display = "none";
+
+});
+hytterLeftImage[11].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    granstua1.style.display = "none";
+    granstua2.style.display = "block";
+    granstua3.style.display = "none";
+    granstua4.style.display = "none";
+
+});
+hytterLeftImage[12].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    granstua1.style.display = "none";
+    granstua2.style.display = "none";
+    granstua3.style.display = "block";
+    granstua4.style.display = "none";
+
+});
+hytterLeftImage[13].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    granstua1.style.display = "none";
+    granstua2.style.display = "none";
+    granstua3.style.display = "none";
+    granstua4.style.display = "block";
 
 });

@@ -56,6 +56,17 @@ homeLink[1].addEventListener('click', function(event) {
     granstua.style.display = "none";
     grantoppen.style.display = "none";
 
+    // Granstua
+    granbo1.style.display = "block";
+    granbo2.style.display = "none";
+    granbo3.style.display = "none";
+    granbo4.style.display = "none";
+    // Granstua
+    granstua1.style.display = "block";
+    granstua2.style.display = "none";
+    granstua3.style.display = "none";
+    granstua4.style.display = "none";
+
 });
 // Heiskort Link 1
 heiskortLink[0].addEventListener('click', function(event) {
@@ -126,11 +137,22 @@ purchaseLink[0].addEventListener('click', function(event) {
     pagePurchase.style.display = "block";
 
     // Output payment details
+    let pType = document.getElementsByClassName("p-type");
     let ageFinalText = document.getElementById("age-final-text");
     let daysFinalText = document.getElementById("days-final-text");
     let payPriceText = document.getElementById("price-pay-text");
-    let dateText = document.getElementById("date-text");
-    let timeText = document.getElementById("time-text")
+    let dateText = document.getElementsByClassName("date-text");
+    let timeText = document.getElementsByClassName("time-text");
+
+    let pAge = document.getElementsByClassName("p-age");
+    let pDays = document.getElementsByClassName("p-days");
+    let pPrice = document.getElementsByClassName("p-price");
+
+    pType[0].innerHTML = "Heiskort";
+
+    pAge[0].style.display = "block";
+    pDays[0].style.display = "block";
+    pPrice[0].style.display = "flex";
 
     let date = new Date();
     let months = ["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"];
@@ -144,8 +166,8 @@ purchaseLink[0].addEventListener('click', function(event) {
     ageFinalText.innerHTML = ageFinal.innerHTML;
     daysFinalText.innerHTML = days.innerHTML;
     payPriceText.innerHTML = price.innerHTML;
-    dateText.innerHTML = date.getDate() + ' ' + months[date.getMonth()] + ', ' + date.getFullYear();
-    timeText.innerHTML = hour + ':' + minute;
+    dateText[0].innerHTML = date.getDate() + ' ' + months[date.getMonth()] + ', ' + date.getFullYear();
+    timeText[0].innerHTML = hour + ':' + minute;
 
     if (slider.value == 6) {
         discount[2].style.display = "inline-block";
@@ -157,11 +179,11 @@ purchaseLink[0].addEventListener('click', function(event) {
         discount[2].innerHTML =  "";
     }
 
-    let loader = document.getElementById("loader");
-    let checkmark = document.getElementById("checkmark");
+    let loader = document.getElementsByClassName("user-loader");
+    let checkmark = document.getElementsByClassName("uil-check");
 
-    loader.style.animation = "loader 5s ease-in-out forwards";
-    checkmark.style.animation = "checkmark 5s ease-in-out forwards";
+    loader[0].style.animation = "loader 5s ease-in-out forwards";
+    checkmark[0].style.animation = "checkmark 5s ease-in-out forwards";
 
     setTimeout(function() {
         pageHome.style.display = "block";
@@ -191,9 +213,74 @@ purchaseLink[0].addEventListener('click', function(event) {
             "0" +
             "%, #eaeefb 100%)";
 
-        loader.style.animation = "none";
-        checkmark.style.animation = "none";
-    }, 7500);
+        pAge[0].style.display = "none";
+        pDays[0].style.display = "none";
+        pPrice[0].style.display = "none";
+
+        loader[0].style.animation = "none";
+        checkmark[0].style.animation = "none";
+    }, 5000);
+
+});
+// Purchase Link 2
+purchaseLink[1].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    pageHome.style.display = "none";
+    pageHeiskort.style.display = "none";
+    pageHytter.style.display = "none";
+    pagePurchase.style.display = "block";
+
+    let pType = document.getElementsByClassName("p-type");
+    pType[0].innerHTML = "Hytte";
+
+    let dateText = document.getElementsByClassName("date-text");
+    let timeText = document.getElementsByClassName("time-text");
+
+    let date = new Date();
+    let months = ["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"];
+
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+
+    if (hour.toString().length === 1) { hour = '0' + hour; }
+    if (minute.toString().length === 1) { minute = '0' + minute; }
+
+    dateText[0].innerHTML = date.getDate() + ' ' + months[date.getMonth()] + ', ' + date.getFullYear();
+    timeText[0].innerHTML = hour + ':' + minute;
+
+    let loader = document.getElementsByClassName("user-loader");
+    let checkmark = document.getElementsByClassName("uil-check");
+
+    loader[0].style.animation = "loader 5s ease-in-out forwards";
+    checkmark[0].style.animation = "checkmark 5s ease-in-out forwards";
+
+    setTimeout(function() {
+        // Scroll to top
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
+
+        // Pages
+        pageHome.style.display = "block";
+        pageHeiskort.style.display = "none";
+        pageHytter.style.display = "none";
+        hytterView.style.display = "flex";
+        pagePurchase.style.display = "none";
+        granbo.style.display = "none";
+        granhaug.style.display = "none";
+        granstua.style.display = "none";
+        grantoppen.style.display = "none";
+    }, 5000);
 
 });
 

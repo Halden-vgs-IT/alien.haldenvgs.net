@@ -492,9 +492,12 @@
                                 <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
                             </svg>
                         </div>
-                        <div class="star empty flexbox">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
+                        <div class="star filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_34" data-name="Layer 34" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-34{fill:var(--yellow);}</style></defs>
+                                <path class="cls-34" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-34" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
                             </svg>
                         </div>
                         <div class="star empty flexbox">
@@ -575,20 +578,14 @@
                                 <polygon class="cls-33" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
                             </svg>
                         </div>
-                        <div class="star filled flexbox">
-                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_34" data-name="Layer 34" viewBox="0 0 20.03 19.12">
-                                <defs><style>.cls-34{fill:var(--yellow);}</style></defs>
-                                <path class="cls-34" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
-                                <polygon class="cls-34" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
-                                <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                        <div class="star empty flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
                             </svg>
                         </div>
-                        <div class="star filled flexbox">
-                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_34" data-name="Layer 34" viewBox="0 0 20.03 19.12">
-                                <defs><style>.cls-34{fill:var(--yellow);}</style></defs>
-                                <path class="cls-34" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
-                                <polygon class="cls-34" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
-                                <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                        <div class="star empty flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
                             </svg>
                         </div>
                         <div class="star empty flexbox">
@@ -637,17 +634,23 @@
                     <!-- Page Left Image -->
                     <div class="hytter-left-image-wrapper flexbox">
                         <div class="hytter-left-image-wrapper-inner flexbox">
-                            <img src="images/granstua.jpg" alt="">
+                            <img id="granstua1" src="images/granstua.jpg" alt="">
+                            <img id="granstua2" class="hidden" src="images/granstua01.jpg" alt="">
+                            <img id="granstua3" class="hidden" src="images/granstua02.jpg" alt="">
+                            <img id="granstua4" class="hidden" src="images/granstua03.jpg" alt="">
                         </div>
                         <div class="hytter-left-images">
                             <div class="hytter-left-image flexbox">
                                 <img src="images/granstua.jpg" alt="">
                             </div>
                             <div class="hytter-left-image flexbox">
+                                <img src="images/granstua01.jpg" alt="">
                             </div>
                             <div class="hytter-left-image flexbox">
+                                <img src="images/granstua02.jpg" alt="">
                             </div>
                             <div class="hytter-left-image flexbox">
+                                <img src="images/granstua03.jpg" alt="">
                             </div>
                             <div class="hytter-left-image flexbox">
                             </div>
@@ -859,14 +862,14 @@
             <div class="p-box-inner flexbox-col">
 
                 <div class="check flexbox">
-                    <div id="loader" class="user-loader flexbox">
+                    <div class="user-loader flexbox">
                         <div class="loader flexbox">
                             <svg class="circular" viewBox="25 25 50 50">
                                 <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
                             </svg>
                         </div>
                     </div>
-                    <span class="circ flexbox"><i id="checkmark" class="uil uil-check"></i></span>
+                    <span class="circ flexbox"><i class="uil uil-check"></i></span>
                 </div>
 
                 <!-- Purchase Box Left -->
@@ -884,16 +887,16 @@
 
                     <div class="purchase-title flexbox-col-left">
                         <div class="p-title flexbox-col-left">
-                            <h3>Heiskort</h3>
+                            <h3 class="p-type">Heiskort</h3>
                         </div>
                         <div class="p-date flexbox-space">
                             <div class="flexbox-col-left">
                                 <p class="p-sub">Dato</p>
-                                <p id="date-text" class="p-main"></p>
+                                <p class="p-main date-text"></p>
                             </div>
                             <div class="flexbox-col-right">
                                 <p class="p-sub">Tid</p>
-                                <p id="time-text" class="p-main"></p>
+                                <p class="p-main time-text"></p>
                             </div>
                         </div>
                         <div class="p-age flexbox-col-left">
