@@ -97,10 +97,10 @@ if (search.value !== arr[0] || search.value !== arr[1] ||search.value !== arr[2]
 } else {
 }
 
-search.addEventListener("input", gay);
-sel.addEventListener("mouseout", gay);
+search.addEventListener("input", checker);
+sel.addEventListener("mouseout", checker);
 
-function gay() {
+function checker() {
     if (search.value === arr[0]) {
         console.log(hytter[0]["utleid"]["jul"]);
     } else {

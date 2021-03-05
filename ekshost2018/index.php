@@ -358,6 +358,7 @@
             <div class="hytter-navbar flexbox-left">
                 <div class="page-top">
                     <a class="back-to-home home-link"><i class="uil uil-arrow-left"></i> Tilbake til forsiden</a>
+                    <a class="back-to-home back-link"><i class="uil uil-arrow-left"></i> Tilbake</a>
                 </div>
             </div>
 

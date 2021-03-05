@@ -508,6 +508,9 @@ h1 {
     color: var(--primary);
     cursor: pointer;
 }
+.back-link {
+    display: none;
+}
 .buy-note {
     width: 100%;
     margin: 0;

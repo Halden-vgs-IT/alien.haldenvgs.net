@@ -259,6 +259,9 @@ grantoppenView.addEventListener('click', function(event) {
         behavior: 'auto'
     });
 
+    homeLink[1].style.display = "none";
+    backLink[0].style.display = "block";
+
     // Pages
     hytterView.style.display = "none";
     grantoppen.style.display = "grid";
@@ -273,6 +276,9 @@ granboView.addEventListener('click', function(event) {
         top: 0,
         behavior: 'auto'
     });
+
+    homeLink[1].style.display = "none";
+    backLink[0].style.display = "block";
 
     // Pages
     hytterView.style.display = "none";
@@ -289,6 +295,9 @@ granstuaView.addEventListener('click', function(event) {
         behavior: 'auto'
     });
 
+    homeLink[1].style.display = "none";
+    backLink[0].style.display = "block";
+
     // Pages
     hytterView.style.display = "none";
     granstua.style.display = "grid";
@@ -303,6 +312,9 @@ granhaugView.addEventListener('click', function(event) {
         top: 0,
         behavior: 'auto'
     });
+
+    homeLink[1].style.display = "none";
+    backLink[0].style.display = "block";
 
     // Pages
     hytterView.style.display = "none";

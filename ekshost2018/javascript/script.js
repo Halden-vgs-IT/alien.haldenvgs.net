@@ -102,6 +102,7 @@ heiskortLink[1].addEventListener('click', function(event) {
     pageHytter.style.display = "none";
 
 });
+let backLink = document.getElementsByClassName("back-link");
 // Hytter Link 1
 hytterLink[0].addEventListener('click', function(event) {
 
@@ -117,6 +118,34 @@ hytterLink[0].addEventListener('click', function(event) {
     pageHome.style.display = "none";
     pageHeiskort.style.display = "none";
     pageHytter.style.display = "block";
+
+    homeLink[1].style.display = "block";
+    backLink[0].style.display = "none";
+
+});
+backLink[0].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    pageHome.style.display = "none";
+    pageHeiskort.style.display = "none";
+    pageHytter.style.display = "block";
+
+    homeLink[1].style.display = "block";
+    backLink[0].style.display = "none";
+
+    hytterView.style.display = "block";
+    grantoppen.style.display = "none";
+    granstua.style.display = "none";
+    granhaug.style.display = "none";
+    granbo.style.display = "none";
 
 });
 // Purchase Link 1
@@ -268,7 +297,7 @@ purchaseLink[1].addEventListener('click', function(event) {
 
     loader[0].style.animation = "loader 5s ease-in-out forwards";
     checkmark[0].style.animation = "checkmark 5s ease-in-out forwards";
-
+    
     hytter[0]["utleid"]["jul"] = true;
     buyBtn[0].innerHTML = "Hytten er opptatt";
 
