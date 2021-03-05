@@ -519,7 +519,7 @@
                             <span class="h-bath-text"></span>
                             <span class="h-price-text"></span>
                         </p>
-                        <p>Granbo er en av våde mest populære hytter...</p>
+                        <p>Granbo er en av våre mest populære hytter...</p>
                     </div>
 
                     <div class="buy-note-button">

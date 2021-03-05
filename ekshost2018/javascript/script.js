@@ -297,9 +297,17 @@ purchaseLink[1].addEventListener('click', function(event) {
 
     loader[0].style.animation = "loader 5s ease-in-out forwards";
     checkmark[0].style.animation = "checkmark 5s ease-in-out forwards";
-    
-    hytter[0]["utleid"]["jul"] = true;
+
+    if (search.value === arr[0]) {
+        hytter[0]["utleid"]["jul"] = true;
+    } else if (search.value === arr[1]) {
+        hytter[0]["utleid"]["vinter"] = true;
+    } else if (search.value === arr[2]) {
+        hytter[0]["utleid"]["paske"] = true;
+    }
+
     buyBtn[0].innerHTML = "Hytten er opptatt";
+    buyBtn[0].style.pointerEvents = "none";
 
     setTimeout(function() {
         // Scroll to top
@@ -367,8 +375,16 @@ purchaseLink[2].addEventListener('click', function(event) {
     loader[0].style.animation = "loader 5s ease-in-out forwards";
     checkmark[0].style.animation = "checkmark 5s ease-in-out forwards";
 
-    hytter[1]["utleid"]["jul"] = true;
+    if (search.value === arr[0]) {
+        hytter[1]["utleid"]["jul"] = true;
+    } else if (search.value === arr[1]) {
+        hytter[1]["utleid"]["vinter"] = true;
+    } else if (search.value === arr[2]) {
+        hytter[1]["utleid"]["paske"] = true;
+    }
+
     buyBtn[1].innerHTML = "Hytten er opptatt";
+    buyBtn[1].style.pointerEvents = "none";
 
     setTimeout(function() {
         // Scroll to top
@@ -436,8 +452,16 @@ purchaseLink[3].addEventListener('click', function(event) {
     loader[0].style.animation = "loader 5s ease-in-out forwards";
     checkmark[0].style.animation = "checkmark 5s ease-in-out forwards";
 
-    hytter[2]["utleid"]["jul"] = true;
+    if (search.value === arr[0]) {
+        hytter[2]["utleid"]["jul"] = true;
+    } else if (search.value === arr[1]) {
+        hytter[2]["utleid"]["vinter"] = true;
+    } else if (search.value === arr[2]) {
+        hytter[2]["utleid"]["paske"] = true;
+    }
+
     buyBtn[2].innerHTML = "Hytten er opptatt";
+    buyBtn[2].style.pointerEvents = "none";
 
     setTimeout(function() {
         // Scroll to top
@@ -505,8 +529,16 @@ purchaseLink[4].addEventListener('click', function(event) {
     loader[0].style.animation = "loader 5s ease-in-out forwards";
     checkmark[0].style.animation = "checkmark 5s ease-in-out forwards";
 
-    hytter[3]["utleid"]["jul"] = true;
+    if (search.value === arr[0]) {
+        hytter[3]["utleid"]["jul"] = true;
+    } else if (search.value === arr[1]) {
+        hytter[3]["utleid"]["vinter"] = true;
+    } else if (search.value === arr[2]) {
+        hytter[3]["utleid"]["paske"] = true;
+    }
+
     buyBtn[3].innerHTML = "Hytten er opptatt";
+    buyBtn[3].style.pointerEvents = "none";
 
     setTimeout(function() {
         // Scroll to top
