@@ -33,6 +33,7 @@
     <script src="javascript/script.js" defer></script>
     <script src="javascript/heiskort.js" defer></script>
     <script src="javascript/hytter.js" defer></script>
+    <script src="javascript/select.js" defer></script>
     <script src="javascript/rellax.min.js"></script>
     <script src="javascript/rellax.js"></script>
     <!-- =========== -->
@@ -296,9 +297,9 @@
                                 <span id="days"></span> dager
                             </div>
                             <div class="right flexbox-right">
-                                <span id="disc1" class="price-disc">&nbsp1200kr&nbsp</span>
-                                <span id="disc2" class="price-disc">&nbsp1400kr&nbsp</span>
-                                <span class="price"><span id="price">200</span>kr</span>
+                                <span id="disc1" class="price-disc">&nbspkr 1200&nbsp</span>
+                                <span id="disc2" class="price-disc">&nbspkr 1400&nbsp</span>
+                                <span class="price"><span id="price">200</span></span>
                                 <span class="discount">16.67% <span class="hide">rabatt<span></span>
                             </div>
                         </div>
@@ -323,7 +324,7 @@
                         <div class="right flexbox">
                             <div class="buy-note-price">
                                 <p>
-                                    <span id="price-final">200</span>kr
+                                    <span id="price-final">200</span>
                                     <span class="discount">16.67</span>
                                 </p>
                             </div>
@@ -382,6 +383,17 @@
                     </div>
                     <div class="video-overlay"></div>
                     <img id="hytter-video" src="images/hytter-video.jpg" alt="">
+                </div>
+
+                <div class="hytter-header-text flexbox-col-left">
+                    <h3>Hytter</h3>
+                    <p>Lei en av våre hytter til ferien din på vårt skisenter.</p>
+                    <div id="search-wrapper" class="flexbox">
+                        <i class="uil uil-star"></i>
+                        <input id="search" name="role" autocomplete="off" placeholder="Velg tid" aria-label="">
+                        <div id="chev" class="flexbox"><i class="uil uil-angle-up"></i></div>
+                        <div id="results"></div>
+                    </div>
                 </div>
 
                 <div class="hytter-header-outer flexbox">
@@ -496,21 +508,21 @@
                                 <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
                             </svg>
                         </div>
-                        <p>5 reviews</p>
+                        <p>7 reviews</p>
                     </div>
 
                     <div class="hytter-paragraph">
                         <p>
-                            <span><i class="uil uil-bed"></i> 6</span>
-                            <span><i class="uil uil-thumbs-up"></i> Høy</span>
-                            <span><i class="uil uil-bath"></i> Nei</span>
-                            <span><i class="uil uil-money-bill"></i> 15 000</span>
+                            <span class="h-beds-text"></span>
+                            <span class="h-standard-text"></span>
+                            <span class="h-bath-text"></span>
+                            <span class="h-price-text"></span>
                         </p>
                         <p>Granbo er en av våde mest populære hytter...</p>
                     </div>
 
                     <div class="buy-note-button">
-                        <button type="button" class="button btn-primary purchase-link"><i class="uil uil-estate"></i> Lei for 15 000kr<div class="btn-secondary"></div></button>
+                        <button type="button" class="button btn-primary buy-btn purchase-link"><div class="btn-secondary"></div></button>
                     </div>
 
 
@@ -604,21 +616,21 @@
                                 <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
                             </svg>
                         </div>
-                        <p>5 reviews</p>
+                        <p>15 reviews</p>
                     </div>
 
                     <div class="hytter-paragraph">
                         <p>
-                            <span><i class="uil uil-bed"></i> 6</span>
-                            <span><i class="uil uil-thumbs-up"></i> Høy</span>
-                            <span><i class="uil uil-bath"></i> Nei</span>
-                            <span><i class="uil uil-money-bill"></i> 15 000</span>
+                            <span class="h-beds-text"></span>
+                            <span class="h-standard-text"></span>
+                            <span class="h-bath-text"></span>
+                            <span class="h-price-text"></span>
                         </p>
                         <p>Granbo er en av våde mest populære hytter...</p>
                     </div>
 
                     <div class="buy-note-button">
-                        <button type="button" class="button btn-primary purchase-link"><i class="uil uil-estate"></i> Lei for 15 000kr<div class="btn-secondary"></div></button>
+                        <button type="button" class="button btn-primary buy-btn purchase-link"><div class="btn-secondary"></div></button>
                     </div>
 
 
@@ -683,20 +695,14 @@
                                 <polygon class="cls-33" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
                             </svg>
                         </div>
-                        <div class="star filled flexbox">
-                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_34" data-name="Layer 34" viewBox="0 0 20.03 19.12">
-                                <defs><style>.cls-34{fill:var(--yellow);}</style></defs>
-                                <path class="cls-34" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
-                                <polygon class="cls-34" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
-                                <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                        <div class="star empty flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
                             </svg>
                         </div>
-                        <div class="star filled flexbox">
-                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_34" data-name="Layer 34" viewBox="0 0 20.03 19.12">
-                                <defs><style>.cls-34{fill:var(--yellow);}</style></defs>
-                                <path class="cls-34" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
-                                <polygon class="cls-34" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
-                                <polygon class="cls-34" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
+                        <div class="star empty flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
                             </svg>
                         </div>
                         <div class="star empty flexbox">
@@ -709,21 +715,21 @@
                                 <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
                             </svg>
                         </div>
-                        <p>5 reviews</p>
+                        <p>11 reviews</p>
                     </div>
 
                     <div class="hytter-paragraph">
                         <p>
-                            <span><i class="uil uil-bed"></i> 6</span>
-                            <span><i class="uil uil-thumbs-up"></i> Høy</span>
-                            <span><i class="uil uil-bath"></i> Nei</span>
-                            <span><i class="uil uil-money-bill"></i> 15 000</span>
+                            <span class="h-beds-text"></span>
+                            <span class="h-standard-text"></span>
+                            <span class="h-bath-text"></span>
+                            <span class="h-price-text"></span>
                         </p>
                         <p>Granbo er en av våde mest populære hytter...</p>
                     </div>
 
                     <div class="buy-note-button">
-                        <button type="button" class="button btn-primary purchase-link"><i class="uil uil-estate"></i> Lei for 15 000kr<div class="btn-secondary"></div></button>
+                        <button type="button" class="button btn-primary buy-btn purchase-link"><div class="btn-secondary"></div></button>
                     </div>
 
 
@@ -782,19 +788,28 @@
                                 <polygon class="cls-33" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
                             </svg>
                         </div>
-                        <div class="star empty flexbox">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
+                        <div class="star first filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_33" data-name="Layer 33" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-33{fill:var(--yellow);}</style></defs>
+                                <path class="cls-33" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-33" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-33" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
                             </svg>
                         </div>
-                        <div class="star empty flexbox">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
+                        <div class="star first filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_33" data-name="Layer 33" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-33{fill:var(--yellow);}</style></defs>
+                                <path class="cls-33" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-33" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-33" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
                             </svg>
                         </div>
-                        <div class="star empty flexbox">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path fill="var(--yellow)" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/>
+                        <div class="star first filled flexbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_33" data-name="Layer 33" viewBox="0 0 20.03 19.12">
+                                <defs><style>.cls-33{fill:var(--yellow);}</style></defs>
+                                <path class="cls-33" d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.34-.46A1,1,0,0,0,11.1,3L8.55,8.16,2.86,9a1,1,0,0,0-.56,1.68l4.13,4-1,5.68a1,1,0,0,0,1.45,1.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19L12.05,16.5,7.82,18.75l.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z" transform="translate(-2.01 -2.44)"/>
+                                <polygon class="cls-33" points="10.04 4.31 10.04 1.67 7.31 6.71 1.58 7.77 5.38 12.17 4.57 17.84 10.04 15.27 10.04 4.31"/>
+                                <polygon class="cls-33" points="9.99 4.12 9.99 1.48 12.72 6.52 18.46 7.58 14.65 11.98 15.47 17.65 9.99 15.08 9.99 4.12"/>
                             </svg>
                         </div>
                         <div class="star empty flexbox">
@@ -807,16 +822,16 @@
 
                     <div class="hytter-paragraph">
                         <p>
-                            <span><i class="uil uil-bed"></i> 6</span>
-                            <span><i class="uil uil-thumbs-up"></i> Høy</span>
-                            <span><i class="uil uil-bath"></i> Nei</span>
-                            <span><i class="uil uil-money-bill"></i> 15 000</span>
+                            <span class="h-beds-text"></span>
+                            <span class="h-standard-text"></span>
+                            <span class="h-bath-text"></span>
+                            <span class="h-price-text"></span>
                         </p>
                         <p>Granbo er en av våde mest populære hytter...</p>
                     </div>
 
                     <div class="buy-note-button">
-                        <button type="button" class="button btn-primary purchase-link"><i class="uil uil-estate"></i> Lei for 15 000kr<div class="btn-secondary"></div></button>
+                        <button type="button" class="button btn-primary buy-btn purchase-link"><div class="btn-secondary"></div></button>
                     </div>
 
 
@@ -910,7 +925,7 @@
                         <div class="p-price flexbox-space">
                             <div class="flexbox-col-left">
                                 <p class="p-sub">Pris</p>
-                                <p class="p-main"><span id="price-pay-text"></span>kr <span class="discount">16.67</span></p>
+                                <p class="p-main"><span id="price-pay-text"></span> <span class="discount">16.67</span></p>
                             </div>
                             <div class="flexbox-col-right">
                                 <p class="p-sub">&nbsp</p>

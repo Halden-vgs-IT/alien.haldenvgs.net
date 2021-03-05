@@ -198,12 +198,13 @@ purchaseLink[0].addEventListener('click', function(event) {
         voksenButton.style.border = "1px solid var(--bc-gray)";
 
         slider.value = 1;
-        price.innerHTML = Number(prices[0]).toFixed(0);
-        priceFinal.innerHTML = Number(prices[0]).toFixed(0);
+        price.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[0]);
+        priceFinal.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[0]);
         days.innerHTML = "1";
         daysFinal.innerHTML = "1";
         discount[0].style.display = "none";
         discount[1].style.display = "none";
+        discount[2].style.display = "none";
         disc1.style.display = "none";
         disc2.style.display = "none";
         slider.style.background =
@@ -222,8 +223,8 @@ purchaseLink[0].addEventListener('click', function(event) {
     }, 5000);
 
 });
-// Purchase Link 2
-purchaseLink[2].addEventListener('click', function(event) {
+// Purchase Link 1
+purchaseLink[1].addEventListener('click', function(event) {
 
     event.preventDefault();
 
@@ -239,8 +240,13 @@ purchaseLink[2].addEventListener('click', function(event) {
     pageHytter.style.display = "none";
     pagePurchase.style.display = "block";
 
+    let pPrice = document.getElementsByClassName("p-price");
+    let payPriceText = document.getElementById("price-pay-text");
+    pPrice[0].style.display = "flex";
+    payPriceText.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]);
+
     let pType = document.getElementsByClassName("p-type");
-    pType[0].innerHTML = "Granbo Hytte";
+    pType[0].innerHTML = "Grantoppen Hytte";
 
     let dateText = document.getElementsByClassName("date-text");
     let timeText = document.getElementsByClassName("time-text");
@@ -262,6 +268,216 @@ purchaseLink[2].addEventListener('click', function(event) {
 
     loader[0].style.animation = "loader 5s ease-in-out forwards";
     checkmark[0].style.animation = "checkmark 5s ease-in-out forwards";
+
+    hytter[0]["utleid"]["jul"] = true;
+    buyBtn[0].innerHTML = "Hytten er opptatt";
+
+    setTimeout(function() {
+        // Scroll to top
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
+
+        // Pages
+        pageHome.style.display = "block";
+        pageHeiskort.style.display = "none";
+        pageHytter.style.display = "none";
+        hytterView.style.display = "flex";
+        pagePurchase.style.display = "none";
+        granbo.style.display = "none";
+        granhaug.style.display = "none";
+        granstua.style.display = "none";
+        grantoppen.style.display = "none";
+    }, 5000);
+
+});
+// Purchase Link 2
+purchaseLink[2].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    pageHome.style.display = "none";
+    pageHeiskort.style.display = "none";
+    pageHytter.style.display = "none";
+    pagePurchase.style.display = "block";
+
+    let pPrice = document.getElementsByClassName("p-price");
+    let payPriceText = document.getElementById("price-pay-text");
+    pPrice[0].style.display = "flex";
+    payPriceText.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[1]["ukepris"]);
+
+    let pType = document.getElementsByClassName("p-type");
+    pType[0].innerHTML = "Grantoppen Hytte";
+
+    let dateText = document.getElementsByClassName("date-text");
+    let timeText = document.getElementsByClassName("time-text");
+
+    let date = new Date();
+    let months = ["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"];
+
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+
+    if (hour.toString().length === 1) { hour = '0' + hour; }
+    if (minute.toString().length === 1) { minute = '0' + minute; }
+
+    dateText[0].innerHTML = date.getDate() + ' ' + months[date.getMonth()] + ', ' + date.getFullYear();
+    timeText[0].innerHTML = hour + ':' + minute;
+
+    let loader = document.getElementsByClassName("user-loader");
+    let checkmark = document.getElementsByClassName("uil-check");
+
+    loader[0].style.animation = "loader 5s ease-in-out forwards";
+    checkmark[0].style.animation = "checkmark 5s ease-in-out forwards";
+
+    hytter[1]["utleid"]["jul"] = true;
+    buyBtn[1].innerHTML = "Hytten er opptatt";
+
+    setTimeout(function() {
+        // Scroll to top
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
+
+        // Pages
+        pageHome.style.display = "block";
+        pageHeiskort.style.display = "none";
+        pageHytter.style.display = "none";
+        hytterView.style.display = "flex";
+        pagePurchase.style.display = "none";
+        granbo.style.display = "none";
+        granhaug.style.display = "none";
+        granstua.style.display = "none";
+        grantoppen.style.display = "none";
+    }, 5000);
+
+});
+// Purchase Link 2
+purchaseLink[3].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    pageHome.style.display = "none";
+    pageHeiskort.style.display = "none";
+    pageHytter.style.display = "none";
+    pagePurchase.style.display = "block";
+
+    let pPrice = document.getElementsByClassName("p-price");
+    let payPriceText = document.getElementById("price-pay-text");
+    pPrice[0].style.display = "flex";
+    payPriceText.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[2]["ukepris"]);
+
+    let pType = document.getElementsByClassName("p-type");
+    pType[0].innerHTML = "Grantoppen Hytte";
+
+    let dateText = document.getElementsByClassName("date-text");
+    let timeText = document.getElementsByClassName("time-text");
+
+    let date = new Date();
+    let months = ["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"];
+
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+
+    if (hour.toString().length === 1) { hour = '0' + hour; }
+    if (minute.toString().length === 1) { minute = '0' + minute; }
+
+    dateText[0].innerHTML = date.getDate() + ' ' + months[date.getMonth()] + ', ' + date.getFullYear();
+    timeText[0].innerHTML = hour + ':' + minute;
+
+    let loader = document.getElementsByClassName("user-loader");
+    let checkmark = document.getElementsByClassName("uil-check");
+
+    loader[0].style.animation = "loader 5s ease-in-out forwards";
+    checkmark[0].style.animation = "checkmark 5s ease-in-out forwards";
+
+    hytter[2]["utleid"]["jul"] = true;
+    buyBtn[2].innerHTML = "Hytten er opptatt";
+
+    setTimeout(function() {
+        // Scroll to top
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
+
+        // Pages
+        pageHome.style.display = "block";
+        pageHeiskort.style.display = "none";
+        pageHytter.style.display = "none";
+        hytterView.style.display = "flex";
+        pagePurchase.style.display = "none";
+        granbo.style.display = "none";
+        granhaug.style.display = "none";
+        granstua.style.display = "none";
+        grantoppen.style.display = "none";
+    }, 5000);
+
+});
+// Purchase Link 2
+purchaseLink[4].addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Pages
+    pageHome.style.display = "none";
+    pageHeiskort.style.display = "none";
+    pageHytter.style.display = "none";
+    pagePurchase.style.display = "block";
+
+    let pPrice = document.getElementsByClassName("p-price");
+    let payPriceText = document.getElementById("price-pay-text");
+    pPrice[0].style.display = "flex";
+    payPriceText.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[3]["ukepris"]);
+
+    let pType = document.getElementsByClassName("p-type");
+    pType[0].innerHTML = "Grantoppen Hytte";
+
+    let dateText = document.getElementsByClassName("date-text");
+    let timeText = document.getElementsByClassName("time-text");
+
+    let date = new Date();
+    let months = ["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"];
+
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+
+    if (hour.toString().length === 1) { hour = '0' + hour; }
+    if (minute.toString().length === 1) { minute = '0' + minute; }
+
+    dateText[0].innerHTML = date.getDate() + ' ' + months[date.getMonth()] + ', ' + date.getFullYear();
+    timeText[0].innerHTML = hour + ':' + minute;
+
+    let loader = document.getElementsByClassName("user-loader");
+    let checkmark = document.getElementsByClassName("uil-check");
+
+    loader[0].style.animation = "loader 5s ease-in-out forwards";
+    checkmark[0].style.animation = "checkmark 5s ease-in-out forwards";
+
+    hytter[3]["utleid"]["jul"] = true;
+    buyBtn[3].innerHTML = "Hytten er opptatt";
 
     setTimeout(function() {
         // Scroll to top

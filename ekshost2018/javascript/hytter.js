@@ -83,22 +83,49 @@ let hytter = [
     }
 ];
 
+// Below is for testing
 console.log(hytter.find(element => element.hytte === "grantoppen"));
 console.log(hytter.find(element => element.hytte === "granhaug"));
 console.log(hytter.find(element => element.hytte === "granbo"));
 console.log(hytter.find(element => element.hytte === "granstua"));
 console.log(hytter[0]["hytte"] + " har " + hytter[0]["sengeplasser"] + " sengeplasser");
 console.log(hytter[0]["utleid"]["jul"]);
-
-let hytterTitle = document.getElementsByClassName("hytter-title");
+// Above is for testing
 
 // Set title of hytte pages
+let hytterTitle = document.getElementsByClassName("hytter-title");
+
 hytterTitle[0].innerHTML = hytter[0]["hytte"];
 hytterTitle[1].innerHTML = hytter[1]["hytte"];
 hytterTitle[2].innerHTML = hytter[2]["hytte"];
 hytterTitle[3].innerHTML = hytter[3]["hytte"];
 
+// Get info about hytte and add icons
+let hBedsText = document.getElementsByClassName("h-beds-text");
+let hBedsIcon = '<i class="uil uil-bed"></i>';
+let hStandardText = document.getElementsByClassName("h-standard-text");
+let hStandardIcon = '<i class="uil uil-thumbs-up"></i>';
+let hBathText = document.getElementsByClassName("h-bath-text");
+let hBathIcon = '<i class="uil uil-bath"></i>';
+let hPriceText = document.getElementsByClassName("h-price-text");
+let hPriceIcon = '<i class="uil uil-money-bill"></i>';
 
+// Buy button price
+let buyBtn = document.getElementsByClassName("buy-btn");
+let buyBtnIcon = '<i class="uil uil-estate"></i>';
+let buyBtnInner = '<div class="btn-secondary"></div>';
+
+// loops through array and finds right items.
+hytter.forEach(function(item, index) {
+    // Get info about hytte and add icons
+    hBedsText[index].innerHTML = hBedsIcon + ' ' + hytter[index]["sengeplasser"];
+    hStandardText[index].innerHTML = hStandardIcon + ' ' + hytter[index]["standard"];
+    hBathText[index].innerHTML = hBathIcon + ' ' + hytter[index]["badstue"];
+    hPriceText[index].innerHTML = hPriceIcon + ' ' + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[index]["ukepris"]);
+    buyBtn[index].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[index]["ukepris"]) + buyBtnInner;
+});
+
+// Hover effect for hytter main header
 let dot1 = document.getElementById("dot1");
 let dot2 = document.getElementById("dot2");
 let dot3 = document.getElementById("dot3");

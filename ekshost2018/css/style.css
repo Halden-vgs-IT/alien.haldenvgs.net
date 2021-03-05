@@ -856,8 +856,8 @@ h1 {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5em;
+    grid-template-columns: calc(50% - 2.5em) 50%;
+    grid-gap: 2.5em;
     overflow: hidden;
 }
 /* Hytter */
@@ -878,6 +878,105 @@ h1 {
     display: none;
 }
 /* Hytter Image */
+.hytter-header-text {
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+.hytter-header-text h3 {
+    margin: 0;
+    line-height: 1em;
+    font-size: calc(var(--heading-medium) + 1rem);
+    font-weight: 900;
+}
+/* search */
+#search-wrapper {
+    width: 100%;
+    height: 4em;
+    position: relative;
+}
+#search-wrapper i {
+    left: 1em;
+    position: absolute;
+    font-size: 1.66rem;
+    color: var(--primary);
+    text-shadow: 0 0 4px rgba(161, 166, 252, .5);
+    z-index: 10;
+}
+#search {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 1.2em 1.2em 1.2em 3.6em;
+    font-size: 1.22rem;
+    box-shadow: 0 12px 25px 0 rgba(62, 63, 67, .05);
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid var(--bc-gray);
+    transition: border .15s ease-in-out;
+}
+#search:hover {
+    border: 1px solid var(--primary);
+}
+#search:focus {
+    outline: none;
+    border: 1px solid var(--primary);
+}
+#chev {
+    top: 0;
+    left: calc(100% - 2.5em);
+    width: 2.5em;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+#chev i {
+    left: 0;
+    position: absolute;
+    font-size: 1.66rem;
+    color: var(--primary);
+    text-shadow: 0 0 4px rgba(161, 166, 252, .25);
+    z-index: 10;
+}
+#results {
+    top: calc(4em - 2px);
+    left: 0;
+    position: absolute;
+    width: 100%;
+    max-height: 170px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(243, 247, 251, 1);
+    border-left: 1px solid var(--primary);
+    border-right: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
+    display: none;
+    z-index: 10;
+}
+#results::-webkit-scrollbar-track {
+    background-color: var(--white);
+}
+#results::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--white);
+}
+.item {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1.22rem;
+    cursor: pointer;
+    z-index: 10;
+}
+.item:hover {
+    opacity: .5;
+}
 .hytter-header-outer {
     width: 100%;
     position: relative;
@@ -1034,7 +1133,7 @@ h1 {
 /* Hytter Right */
 .hytter-content {
     height: 100%;
-    padding: 5em 5em 5em 0;
+    padding: 5em 5em 5em 2.5em;
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;

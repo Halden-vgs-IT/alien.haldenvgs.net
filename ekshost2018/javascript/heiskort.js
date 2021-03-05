@@ -31,8 +31,8 @@ barn.addEventListener('click', function(event) {
     priceFinal.innerHTML = "100";
     prices = [100, 200, 300, 400, 500, 500, 500];
 
-    disc1.innerHTML = "&nbsp600kr&nbsp";
-    disc2.innerHTML = "&nbsp700kr&nbsp";
+    disc1.innerHTML = "&nbspkr 600&nbsp";
+    disc2.innerHTML = "&nbspkr 700&nbsp";
 
     pageBottom[0].style.display = "block";
     voksenButton.style.opacity = ".5";
@@ -45,8 +45,8 @@ barn.addEventListener('click', function(event) {
 
     // Fix Slider
     slider.value = 1;
-    price.innerHTML = Number(prices[0]).toFixed(0);
-    priceFinal.innerHTML = Number(prices[0]).toFixed(0);
+    price.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[0]);
+    priceFinal.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[0]);
     days.innerHTML = "1";
     daysFinal.innerHTML = "1";
     discount[0].style.display = "none";
@@ -69,8 +69,8 @@ voksen.addEventListener('click', function(event) {
     priceFinal.innerHTML = "200";
     prices = [200, 400, 600, 800, 1000, 1000, 1000];
 
-    disc1.innerHTML = "&nbsp1200kr&nbsp";
-    disc2.innerHTML = "&nbsp1400kr&nbsp";
+    disc1.innerHTML = "&nbspkr 1200&nbsp";
+    disc2.innerHTML = "&nbspkr 1400&nbsp";
 
     pageBottom[0].style.display = "block";
     barnButton.style.opacity = ".5";
@@ -83,8 +83,8 @@ voksen.addEventListener('click', function(event) {
 
     // Fix Slider
     slider.value = 1;
-    price.innerHTML = Number(prices[0]).toFixed(0);
-    priceFinal.innerHTML = Number(prices[0]).toFixed(0);
+    price.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[0]);
+    priceFinal.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[0]);
     days.innerHTML = "1";
     daysFinal.innerHTML = "1";
     discount[0].style.display = "none";
@@ -104,8 +104,8 @@ let listener = function () {
     window.requestAnimationFrame(function () {
         switch (slider.value) {
             case "1":
-                price.innerHTML = Number(prices[0]).toFixed(0);
-                priceFinal.innerHTML = Number(prices[0]).toFixed(0);
+                price.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[0]);
+                priceFinal.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[0]);
                 days.innerHTML = "1";
                 daysFinal.innerHTML = "1";
                 discount[0].style.display = "none";
@@ -114,8 +114,8 @@ let listener = function () {
                 disc2.style.display = "none";
                 break;
             case "2":
-                price.innerHTML = Number(prices[1]).toFixed(0);
-                priceFinal.innerHTML = Number(prices[1]).toFixed(0);
+                price.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[1]);
+                priceFinal.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[1]);
                 days.innerHTML = "2";
                 daysFinal.innerHTML = "2";
                 discount[0].style.display = "none";
@@ -124,8 +124,8 @@ let listener = function () {
                 disc2.style.display = "none";
                 break;
             case "3":
-                price.innerHTML = Number(prices[2]).toFixed(0);
-                priceFinal.innerHTML = Number(prices[2]).toFixed(0);
+                price.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[2]);
+                priceFinal.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[2]);
                 days.innerHTML = "3";
                 daysFinal.innerHTML = "3";
                 discount[0].style.display = "none";
@@ -134,8 +134,8 @@ let listener = function () {
                 disc2.style.display = "none";
                 break;
             case "4":
-                price.innerHTML = Number(prices[3]).toFixed(0);
-                priceFinal.innerHTML = Number(prices[3]).toFixed(0);
+                price.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[3]);
+                priceFinal.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[3]);
                 days.innerHTML = "4";
                 daysFinal.innerHTML = "4";
                 discount[0].style.display = "none";
@@ -144,8 +144,8 @@ let listener = function () {
                 disc2.style.display = "none";
                 break;
             case "5":
-                price.innerHTML = Number(prices[4]).toFixed(0);
-                priceFinal.innerHTML = Number(prices[4]).toFixed(0);
+                price.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[4]);
+                priceFinal.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[4]);
                 days.innerHTML = "5";
                 daysFinal.innerHTML = "5";
                 discount[0].style.display = "none";
@@ -154,8 +154,8 @@ let listener = function () {
                 disc2.style.display = "none";
                 break;
             case "6":
-                price.innerHTML = Number(prices[5]).toFixed(0);
-                priceFinal.innerHTML = Number(prices[5]).toFixed(0);
+                price.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[5]);
+                priceFinal.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[5]);
                 days.innerHTML = "6";
                 daysFinal.innerHTML = "6";
                 discount[0].style.display = "inline-block";
@@ -166,8 +166,8 @@ let listener = function () {
                 disc2.style.display = "none";
                 break;
             case "7":
-                price.innerHTML = Number(prices[6]).toFixed(0);
-                priceFinal.innerHTML = Number(prices[6]).toFixed(0);
+                price.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[6]);
+                priceFinal.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(prices[6]);
                 days.innerHTML = "7";
                 daysFinal.innerHTML = "7";
                 discount[0].style.display = "inline-block";
