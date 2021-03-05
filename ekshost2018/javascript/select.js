@@ -112,90 +112,90 @@ function checker() {
         console.log(hytter[0]["utleid"]["jul"]);
     }
     // 1
-    if (hytter[0]["utleid"]["jul"] === true) {
+    if (hytter[0]["utleid"]["jul"] === true && search.value === arr[0]) {
         buyBtn[0].innerHTML = "Hytten er opptatt";
         buyBtn[0].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[0]["utleid"]["jul"] !== true && search.value === arr[0]) {
         buyBtn[0].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[0].style.pointerEvents = "auto";
     }
-    if (hytter[0]["utleid"]["paske"] === true) {
+    if (hytter[0]["utleid"]["paske"] === true && search.value === arr[2]) {
         buyBtn[0].innerHTML = "Hytten er opptatt";
         buyBtn[0].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[0]["utleid"]["paske"] !== true && search.value === arr[2]) {
         buyBtn[0].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[0].style.pointerEvents = "auto";
     }
-    if (hytter[0]["utleid"]["vinter"] === true) {
+    if (hytter[0]["utleid"]["vinter"] === true && search.value === arr[1]) {
         buyBtn[0].innerHTML = "Hytten er opptatt";
         buyBtn[0].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[0]["utleid"]["vinter"] !== true && search.value === arr[1]) {
         buyBtn[0].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[0].style.pointerEvents = "auto";
     }
     // 2
-    if (hytter[1]["utleid"]["jul"] === true) {
+    if (hytter[1]["utleid"]["jul"] === true && search.value === arr[0]) {
         buyBtn[1].innerHTML = "Hytten er opptatt";
         buyBtn[1].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[1]["utleid"]["jul"] !== true && search.value === arr[0]) {
         buyBtn[1].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[1].style.pointerEvents = "auto";
     }
-    if (hytter[1]["utleid"]["paske"] === true) {
+    if (hytter[1]["utleid"]["paske"] === true && search.value === arr[2]) {
         buyBtn[1].innerHTML = "Hytten er opptatt";
         buyBtn[1].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[1]["utleid"]["paske"] !== true && search.value === arr[2]) {
         buyBtn[1].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[1].style.pointerEvents = "auto";
     }
-    if (hytter[1]["utleid"]["vinter"] === true) {
+    if (hytter[1]["utleid"]["vinter"] === true && search.value === arr[1]) {
         buyBtn[1].innerHTML = "Hytten er opptatt";
         buyBtn[1].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[1]["utleid"]["vinter"] !== true && search.value === arr[1]) {
         buyBtn[1].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[1].style.pointerEvents = "auto";
     }
     // 3
-    if (hytter[2]["utleid"]["jul"] === true) {
+    if (hytter[2]["utleid"]["jul"] === true && search.value === arr[0]) {
         buyBtn[2].innerHTML = "Hytten er opptatt";
         buyBtn[2].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[2]["utleid"]["jul"] !== true && search.value === arr[0]) {
         buyBtn[2].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[2].style.pointerEvents = "auto";
     }
-    if (hytter[2]["utleid"]["paske"] === true) {
+    if (hytter[2]["utleid"]["paske"] === true && search.value === arr[2]) {
         buyBtn[2].innerHTML = "Hytten er opptatt";
         buyBtn[2].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[2]["utleid"]["paske"] !== true && search.value === arr[2]) {
         buyBtn[2].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[2].style.pointerEvents = "auto";
     }
-    if (hytter[2]["utleid"]["vinter"] === true) {
+    if (hytter[2]["utleid"]["vinter"] === true && search.value === arr[1]) {
         buyBtn[2].innerHTML = "Hytten er opptatt";
         buyBtn[2].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[2]["utleid"]["vinter"] !== true && search.value === arr[1]) {
         buyBtn[2].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[2].style.pointerEvents = "auto";
     }
     // 4
-    if (hytter[3]["utleid"]["jul"] === true) {
+    if (hytter[3]["utleid"]["jul"] === true && search.value === arr[0]) {
         buyBtn[3].innerHTML = "Hytten er opptatt";
         buyBtn[3].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[3]["utleid"]["jul"] !== true && search.value === arr[0]) {
         buyBtn[3].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[3].style.pointerEvents = "auto";
     }
-    if (hytter[3]["utleid"]["paske"] === true) {
+    if (hytter[3]["utleid"]["paske"] === true && search.value === arr[2]) {
         buyBtn[3].innerHTML = "Hytten er opptatt";
         buyBtn[3].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[3]["utleid"]["paske"] !== true && search.value === arr[2]) {
         buyBtn[3].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[3].style.pointerEvents = "auto";
     }
-    if (hytter[3]["utleid"]["vinter"] === true) {
+    if (hytter[3]["utleid"]["vinter"] === true && search.value === arr[1]) {
         buyBtn[3].innerHTML = "Hytten er opptatt";
         buyBtn[3].style.pointerEvents = "none";
-    } else {
+    } else if (hytter[3]["utleid"]["vinter"] !== true && search.value === arr[1]) {
         buyBtn[3].innerHTML = buyBtnIcon + " Lei for " + Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[0]["ukepris"]) + buyBtnInner;
         buyBtn[3].style.pointerEvents = "auto";
     }

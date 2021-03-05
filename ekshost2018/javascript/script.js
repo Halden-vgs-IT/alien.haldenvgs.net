@@ -352,7 +352,7 @@ purchaseLink[2].addEventListener('click', function(event) {
     payPriceText.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[1]["ukepris"]);
 
     let pType = document.getElementsByClassName("p-type");
-    pType[0].innerHTML = "Grantoppen Hytte";
+    pType[0].innerHTML = "Granbo Hytte";
 
     let dateText = document.getElementsByClassName("date-text");
     let timeText = document.getElementsByClassName("time-text");
@@ -429,7 +429,7 @@ purchaseLink[3].addEventListener('click', function(event) {
     payPriceText.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[2]["ukepris"]);
 
     let pType = document.getElementsByClassName("p-type");
-    pType[0].innerHTML = "Grantoppen Hytte";
+    pType[0].innerHTML = "Granstua Hytte";
 
     let dateText = document.getElementsByClassName("date-text");
     let timeText = document.getElementsByClassName("time-text");
@@ -506,7 +506,7 @@ purchaseLink[4].addEventListener('click', function(event) {
     payPriceText.innerHTML = Intl.NumberFormat('no-NO', { style: 'currency', currency: 'NOK' }).format(hytter[3]["ukepris"]);
 
     let pType = document.getElementsByClassName("p-type");
-    pType[0].innerHTML = "Grantoppen Hytte";
+    pType[0].innerHTML = "Granhaug Hytte";
 
     let dateText = document.getElementsByClassName("date-text");
     let timeText = document.getElementsByClassName("time-text");
