@@ -220,6 +220,19 @@
 
         </div>
 
+        <div class="oppgave2 flexbox-col-left">
+
+            <h3>Oppgave 2b</h3>
+
+            <p>Her er en skisse som viser brukergrensesnittet for applikasjonen</p>
+
+            <div class="oppgave2-image">
+                <img src="images/opg2/hytter.jpg" alt="">
+                <img src="images/opg2/hytter-view.jpg" alt="">
+            </div>
+
+        </div>
+
     </main>
 
     <!-- #footer -->

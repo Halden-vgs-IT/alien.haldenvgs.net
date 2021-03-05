@@ -308,6 +308,7 @@ purchaseLink[1].addEventListener('click', function(event) {
 
     buyBtn[0].innerHTML = "Hytten er opptatt";
     buyBtn[0].style.pointerEvents = "none";
+    buyBtn[0].style.userSelect = "none";
 
     setTimeout(function() {
         // Scroll to top
@@ -385,6 +386,7 @@ purchaseLink[2].addEventListener('click', function(event) {
 
     buyBtn[1].innerHTML = "Hytten er opptatt";
     buyBtn[1].style.pointerEvents = "none";
+    buyBtn[1].style.userSelect = "none";
 
     setTimeout(function() {
         // Scroll to top
@@ -462,6 +464,7 @@ purchaseLink[3].addEventListener('click', function(event) {
 
     buyBtn[2].innerHTML = "Hytten er opptatt";
     buyBtn[2].style.pointerEvents = "none";
+    buyBtn[2].style.userSelect = "none";
 
     setTimeout(function() {
         // Scroll to top
@@ -539,6 +542,7 @@ purchaseLink[4].addEventListener('click', function(event) {
 
     buyBtn[3].innerHTML = "Hytten er opptatt";
     buyBtn[3].style.pointerEvents = "none";
+    buyBtn[3].style.userSelect = "none";
 
     setTimeout(function() {
         // Scroll to top

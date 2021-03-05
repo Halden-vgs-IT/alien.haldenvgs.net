@@ -88,7 +88,6 @@ let arr = [
     "Påske"
 ];
 
-
 if (search.value !== arr[0] || search.value !== arr[1] ||search.value !== arr[2] ) {
     buyBtn[0].innerHTML = "Du må velge tidspunkt";
     buyBtn[1].innerHTML = "Du må velge tidspunkt";

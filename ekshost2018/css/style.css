@@ -449,6 +449,22 @@ h1 {
     width: 100%;
     height: 100vh;
 }
+#main {
+    margin: 15em 0 0 0;
+}
+/* oppgave 2 */
+.oppgave2 {
+    margin: 10em 0 15em 0;
+    width: 75%;
+}
+.oppgave2 .oppgave2-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em;
+}
+.oppgave2 .oppgave2-image img {
+    width: 100%;
+}
 /* Page Headers */
 .page-inner {
     width: 100%;
@@ -584,6 +600,7 @@ h1 {
     font-size: var(--paragraph);
     background: #3e3f43;
     background-size: 500%;
+    user-select: none;
     border: none;
     transform: scaleX(1);
     transition: transform .3s cubic-bezier(.175,.885,.32,1.275), filter .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275), -webkit-filter .3s cubic-bezier(.175,.885,.32,1.275);
