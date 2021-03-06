@@ -135,35 +135,57 @@
 <!-- #Main -->
 <main class="flexbox-col">
 
-    <div class="projects">
-        <a cursor-class="arrow" href="ekshost2018/index.php">
-            <div class="project flexbox">
-                <h1>Ekshost2018</h1>
-                <div class="overlay"></div>
-                <img class="project-image" src="images/ekshost2018.jpg" alt="">
+    <div class="grid">
+        <div class="card grid-item" style="">
+            <div class="card-info flexbox-col" style="">
+                <h1 class="card-title">Ekshost2018</h1>
+                <a href="ekshost2018/index.php" target="_blank"><button cursor-class="arrow" class="card-cta flexbox">Open</button></a>
             </div>
-        </a>
-        <a cursor-class="arrow" href="prosjekter/exif/index.php">
-            <div class="project flexbox">
-                <h1>Exif</h1>
-                <div class="overlay"></div>
-                <img class="project-image" src="images/exif.jpg" alt="">
+            <div class="arcade-grid-item-image-wrapper">
+                <img class="grid-item-image" src="images/ekshost2018.jpg" alt="">
             </div>
-        </a>
-        <a cursor-class="arrow" href="prosjekter/kart/index.php">
-            <div class="project flexbox">
-                <h1>Kart</h1>
-                <div class="overlay"></div>
-                <img class="project-image" src="images/kart.jpg" alt="">
+            <img class="grid-item-image-back" src="images/ekshost2018.jpg" alt="">
+        </div>
+        <div class="card grid-item">
+            <div class="card-info flexbox-col">
+                <h1 class="card-title">Exif</h1>
+                <a href="prosjekter/exif/index.php" target="_blank"><button cursor-class="arrow" class="card-cta flexbox">Open</button></a>
             </div>
-        </a>
-        <a cursor-class="arrow" href="prosjekter/webeditor/index.php">
-            <div class="project flexbox">
-                <h1>webeditor</h1>
-                <div class="overlay"></div>
-                <img class="project-image" src="images/best-ide.jpg" alt="">
+            <div class="arcade-grid-item-image-wrapper">
+                <img class="grid-item-image" src="images/exif.jpg" alt="">
             </div>
-        </a>
+            <img class="grid-item-image-back" src="images/exif.jpg" alt="">
+        </div>
+        <div class="card grid-item">
+            <div class="card-info flexbox-col">
+                <h1 class="card-title">Kart</h1>
+                <a href="prosjekter/kart/index.php" target="_blank"><button cursor-class="arrow" class="card-cta flexbox">Open</button></a>
+            </div>
+            <div class="arcade-grid-item-image-wrapper">
+                <img class="grid-item-image" src="images/kart.jpg" alt="">
+            </div>
+            <img class="grid-item-image-back" src="images/kart.jpg" alt="">
+        </div>
+        <div class="card grid-item">
+            <div class="card-info flexbox-col">
+                <h1 class="card-title">Web Editor</h1>
+                <a href="prosjekter/webeditor/index.php" target="_blank"><button cursor-class="arrow" class="card-cta flexbox">Open</button></a>
+            </div>
+            <div class="arcade-grid-item-image-wrapper">
+                <img class="grid-item-image" src="images/best-ide.jpg" alt="">
+            </div>
+            <img class="grid-item-image-back" src="images/best-ide.jpg" alt="">
+        </div>
+        <div class="card grid-item">
+            <div class="card-info flexbox-col">
+                <h1 class="card-title">Fastprod</h1>
+                <a href="prosjekter/fastprod/index.php" target="_blank"><button cursor-class="arrow" class="card-cta flexbox">Open</button></a>
+            </div>
+            <div class="arcade-grid-item-image-wrapper">
+                <img class="grid-item-image" src="images/fastprod.jpg" alt="">
+            </div>
+            <img class="grid-item-image-back" src="images/fastprod.jpg" alt="">
+        </div>
     </div>
 
 </main>

@@ -134,36 +134,7 @@
 <!-- #Main -->
 <main class="flexbox-col">
 
-    <div class="projects">
-        <a cursor-class="arrow" href="../ekshost2018/index.php">
-            <div class="project flexbox">
-                <h1>Ekshost2018</h1>
-                <div class="overlay"></div>
-                <img class="project-image" src="../images/ekshost2018.jpg" alt="">
-            </div>
-        </a>
-        <a cursor-class="arrow" href="../prosjekter/exif/index.php">
-            <div class="project flexbox">
-                <h1>Exif</h1>
-                <div class="overlay"></div>
-                <img class="project-image" src="../images/exif.jpg" alt="">
-            </div>
-        </a>
-        <a cursor-class="arrow" href="../prosjekter/kart/index.php">
-            <div class="project flexbox">
-                <h1>Kart</h1>
-                <div class="overlay"></div>
-                <img class="project-image" src="../images/kart.jpg" alt="">
-            </div>
-        </a>
-        <a cursor-class="arrow" href="../prosjekter/webeditor/index.php">
-            <div class="project flexbox">
-                <h1>webeditor</h1>
-                <div class="overlay"></div>
-                <img class="project-image" src="../images/best-ide.jpg" alt="">
-            </div>
-        </a>
-    </div>
+
 
 </main>
 </body>
